@@ -61,7 +61,7 @@ body {
 .nav a {
   display: block;
   font-family: var(--sans);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   letter-spacing: 0.01em;
   color: var(--quiet);
   text-decoration: none;
@@ -82,9 +82,9 @@ main { min-width: 0; }
 /* section heading: all caps, near body size, tracked lightly */
 .label {
   font-family: var(--sans);
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
   font-weight: 400;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   text-align: left;
   color: var(--ink);
@@ -94,9 +94,9 @@ main { min-width: 0; }
 /* subordinate heading inside a section: same treatment, quieter */
 .group {
   font-family: var(--sans);
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 400;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   text-align: left;
   color: var(--quiet);
