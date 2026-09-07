@@ -168,6 +168,15 @@ a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent);
   margin-top: 0.1rem;
 }
 
+/* ---- homepage photograph -------------------------------------------------- */
+
+.photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 5.5rem;
+}
+
 /* ---- long-form prose ----------------------------------------------------- */
 
 .piece-title {
