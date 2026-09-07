@@ -121,12 +121,36 @@ em, i, cite { font-style: italic; }
 .bibliography { margin-top: 6rem; }
 .bibliography .label { margin-bottom: 2.5rem; }
 
-.entry {
-  font-size: 0.9375rem;
-  line-height: 1.62;
-  margin: 0 0 1.75rem;
-}
+.entry { margin: 0 0 2.1rem; }
 .entry:last-child { margin-bottom: 0; }
+
+/* title leads; everything else recedes */
+.entry .title {
+  display: block;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+
+.entry .authors,
+.entry .source {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--quiet);
+}
+.entry .authors { margin-top: 0.25rem; }
+
+/* own name in full ink so it is findable without being shouted */
+.entry .self { color: var(--ink); }
+
+a.title-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--rule);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent); }
 
 /* ---- writing entries ----------------------------------------------------- */
 
