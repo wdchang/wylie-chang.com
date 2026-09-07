@@ -194,6 +194,26 @@ a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent);
 }
 .longform blockquote p:last-child { margin-bottom: 0; }
 
+/* a single line standing alone: give it room rather than emphasis */
+.longform p.beat { margin: 2.5rem 0; }
+
+/* scriptural reading: Chinese, romanisation, gloss */
+.reading { margin: 2.75rem 0; padding-left: 2rem; }
+.reading .zh {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.6rem;
+}
+.reading .pinyin {
+  display: block;
+  font-style: italic;
+  font-size: 0.9375rem;
+  color: var(--quiet);
+}
+.reading .gloss { display: block; font-style: italic; margin-top: 0.4rem; }
+
 .colophon {
   margin-top: 4.5rem;
   font-size: 0.9375rem;
