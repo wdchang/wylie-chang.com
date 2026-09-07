@@ -212,7 +212,7 @@ a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent);
   font-size: 0.9375rem;
   color: var(--quiet);
 }
-.reading .gloss { display: block; font-style: italic; margin-top: 0.4rem; }
+.reading .gloss { display: block; font-style: italic; margin-top: 1.15rem; }
 
 .colophon {
   margin-top: 4.5rem;
