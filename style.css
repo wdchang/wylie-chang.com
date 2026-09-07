@@ -1,78 +1,207 @@
+/* --------------------------------------------------------------------------
+   wylie-chang.com
+   Typography carries the hierarchy. No borders, no cards, no shadows.
+   -------------------------------------------------------------------------- */
+
 :root {
-  --bg: #f8f9fa;
-  --ink: #212529;
-  --accent: #00aadc;
-  --muted: #6c757d;
+  --paper:  #fcfbf8;   /* warm white */
+  --ink:    #1c1b19;   /* near-black */
+  --quiet:  #726d64;   /* metadata, labels */
+  --accent: #2e4a6b;   /* faded ink blue, used sparingly */
+  --rule:   #e0dbd1;
+
+  --serif: "EB Garamond", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
 
+html { -webkit-text-size-adjust: 100%; }
+
 body {
   margin: 0;
-  background: var(--bg);
+  background: var(--paper);
   color: var(--ink);
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-weight: 300;
-  font-size: 0.9rem;
-  line-height: 1.7;
+  font-family: var(--serif);
+  font-size: 1.1875rem;
+  line-height: 1.68;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-.page {
-  max-width: 60rem;
+/* ---- navigation ---------------------------------------------------------- */
+
+.nav {
+  font-family: var(--sans);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 3.25rem 1.5rem 0;
+  color: var(--quiet);
+}
+
+.nav a {
+  color: var(--quiet);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.nav a:hover { color: var(--ink); }
+.nav a[aria-current="page"] { color: var(--ink); }
+
+.nav .sep {
+  padding: 0 0.5em;
+  color: #b8b1a4;
+}
+
+/* ---- page shell ---------------------------------------------------------- */
+
+main {
+  padding: 0 1.75rem 12rem;
+}
+
+.label {
+  font-family: var(--sans);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--quiet);
+  margin: 8.5rem 0 5rem;
+}
+
+.column {
+  max-width: 33rem;
   margin: 0 auto;
-  padding: 3.5rem 2rem;
-  display: grid;
-  grid-template-columns: 12rem 1fr;
-  gap: 4rem;
 }
 
-/* ---- sidebar ---- */
+.column p { margin: 0 0 1.5rem; }
+.column p:last-child { margin-bottom: 0; }
 
-.sitename {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: var(--accent);
+a.link {
+  color: inherit;
   text-decoration: none;
-  display: block;
-  margin-bottom: 1.5rem;
-  line-height: 1.3;
+  border-bottom: 1px solid var(--rule);
 }
-.sitename:hover { opacity: 0.75; }
+a.link:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
-nav a {
-  display: block;
+em, i, cite { font-style: italic; }
+
+/* ---- home ---------------------------------------------------------------- */
+
+.opening {
+  min-height: 72vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.opening h1 {
+  font-family: var(--serif);
+  font-size: clamp(2.75rem, 8vw, 4.25rem);
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 0 2.25rem;
+  letter-spacing: 0.005em;
+}
+
+.opening p {
+  margin: 0;
+  font-size: 1.1875rem;
+}
+
+.coda {
+  max-width: 30rem;
+  margin: 55vh auto 0;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.7;
   color: var(--ink);
-  text-decoration: none;
-  padding: 0.35rem 0;
-  transition: color 0.15s ease;
-}
-nav a:hover { color: var(--accent); }
-nav a[aria-current="page"] { color: var(--accent); }
-
-/* ---- content ---- */
-
-main { max-width: 34rem; }
-
-main p { margin: 0 0 1.1rem; }
-main p:last-child { margin-bottom: 0; }
-
-main h1 {
-  font-size: 1.15rem;
-  font-weight: 500;
-  margin: 0 0 1.1rem;
 }
 
-main a { color: var(--accent); }
+/* ---- research: quiet theme line ------------------------------------------ */
 
-/* ---- small screens ---- */
+.themes {
+  font-family: var(--sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.13em;
+  line-height: 2.4;
+  text-align: center;
+  color: var(--quiet);
+  max-width: 34rem;
+  margin: 5.5rem auto 0;
+}
 
-@media (max-width: 40rem) {
-  .page {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 2.5rem 1.5rem;
-  }
-  nav { display: flex; gap: 1.25rem; }
-  nav a { padding: 0; }
+/* ---- bibliography -------------------------------------------------------- */
+
+.bibliography { margin-top: 9rem; }
+
+.group {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--ink);
+  margin: 4.5rem 0 2.75rem;
+}
+.group:first-of-type { margin-top: 0; }
+
+.entry {
+  font-size: 0.9375rem;
+  line-height: 1.62;
+  margin: 0 0 1.9rem;
+}
+.entry:last-child { margin-bottom: 0; }
+
+/* ---- writing / contact: centered entries --------------------------------- */
+
+.centered { text-align: center; }
+
+.piece {
+  margin: 0 0 3.25rem;
+  text-align: center;
+}
+.piece:last-child { margin-bottom: 0; }
+
+.piece .title { display: block; }
+
+.piece .where {
+  display: block;
+  font-size: 0.9375rem;
+  color: var(--quiet);
+  line-height: 1.6;
+  margin-top: 0.15rem;
+}
+
+.address {
+  text-align: center;
+  line-height: 2.4;
+}
+.address .or {
+  font-family: var(--sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--quiet);
+  display: block;
+  margin: 0.75rem 0;
+}
+
+/* ---- small screens ------------------------------------------------------- */
+
+@media (max-width: 34rem) {
+  body { font-size: 1.125rem; }
+  .nav { padding-top: 2.5rem; line-height: 2.4; }
+  .nav .sep { padding: 0 0.35em; }
+  .label { margin: 5.5rem 0 3.5rem; }
+  main { padding-bottom: 8rem; }
+  .opening { min-height: 62vh; }
+  .coda { margin-top: 38vh; }
+  .bibliography { margin-top: 6rem; }
 }
