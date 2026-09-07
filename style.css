@@ -10,6 +10,7 @@
   --quiet:  #726d64;   /* labels, metadata */
   --accent: #2e4a6b;   /* faded ink blue, links only */
   --rule:   #e0dbd1;
+  --rule-strong: #b3aa9a;   /* visible underline for linked titles */
 
   /* CJK fallbacks so 張振曦 sets gracefully alongside the Latin face */
   --serif: "EB Garamond", "Iowan Old Style", Georgia,
@@ -146,7 +147,7 @@ em, i, cite { font-style: italic; }
 a.title-link {
   color: inherit;
   text-decoration: underline;
-  text-decoration-color: var(--rule);
+  text-decoration-color: var(--rule-strong);
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
