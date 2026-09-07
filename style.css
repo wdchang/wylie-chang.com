@@ -197,11 +197,23 @@ em, i, cite { font-style: italic; }
 
 @media (max-width: 34rem) {
   body { font-size: 1.125rem; }
-  .nav { padding-top: 2.5rem; line-height: 2.4; }
-  .nav .sep { padding: 0 0.35em; }
+
+  /* separators wrap awkwardly at this width; space alone is enough */
+  .nav {
+    padding-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.55rem 1.15rem;
+  }
+  .nav .sep { display: none; }
+
   .label { margin: 5.5rem 0 3.5rem; }
   main { padding-bottom: 8rem; }
   .opening { min-height: 62vh; }
-  .coda { margin-top: 38vh; }
+
+  /* must clear the fold on tall phones, so the first screen is the name alone */
+  .coda { margin-top: 52vh; }
+
   .bibliography { margin-top: 6rem; }
 }
