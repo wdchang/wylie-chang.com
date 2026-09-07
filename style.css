@@ -1,16 +1,19 @@
 /* --------------------------------------------------------------------------
    wylie-chang.com
-   Typography carries the hierarchy. No borders, no cards, no shadows.
+   Left sidebar, left-aligned throughout, a nearly flat typographic scale.
+   Hierarchy comes from case, colour and space — not size.
    -------------------------------------------------------------------------- */
 
 :root {
   --paper:  #fcfbf8;   /* warm white */
   --ink:    #1c1b19;   /* near-black */
-  --quiet:  #726d64;   /* metadata, labels */
-  --accent: #2e4a6b;   /* faded ink blue, used sparingly */
+  --quiet:  #726d64;   /* labels, metadata */
+  --accent: #2e4a6b;   /* faded ink blue, links only */
   --rule:   #e0dbd1;
 
-  --serif: "EB Garamond", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  /* CJK fallbacks so 張振曦 sets gracefully alongside the Latin face */
+  --serif: "EB Garamond", "Iowan Old Style", Georgia,
+           "Songti SC", "Noto Serif CJK SC", "Hiragino Mincho ProN", serif;
   --sans:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -30,56 +33,76 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* ---- navigation ---------------------------------------------------------- */
+/* ---- shell --------------------------------------------------------------- */
 
-.nav {
-  font-family: var(--sans);
-  font-size: 0.6875rem;
-  font-weight: 400;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 3.25rem 1.5rem 0;
-  color: var(--quiet);
+.shell {
+  max-width: 57rem;
+  margin: 0 auto;
+  padding: 5.5rem 2.5rem 12rem;
+  display: grid;
+  grid-template-columns: 10.5rem 1fr;
+  gap: 4.5rem;
+  align-items: start;
 }
 
+/* ---- sidebar ------------------------------------------------------------- */
+
+.name {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.3125rem;
+  line-height: 1.35;
+  color: var(--ink);
+  text-decoration: none;
+  margin-bottom: 1.75rem;
+}
+.name:hover { color: var(--accent); }
+
 .nav a {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
   color: var(--quiet);
   text-decoration: none;
-  white-space: nowrap;
+  padding: 0.3rem 0;
 }
 .nav a:hover { color: var(--ink); }
 .nav a[aria-current="page"] { color: var(--ink); }
 
-.nav .sep {
-  padding: 0 0.5em;
-  color: #b8b1a4;
-}
+/* ---- content ------------------------------------------------------------- */
 
-/* ---- page shell ---------------------------------------------------------- */
+main { min-width: 0; }
 
-main {
-  padding: 0 1.75rem 12rem;
-}
-
-.label {
-  font-family: var(--sans);
-  font-size: 0.6875rem;
-  font-weight: 400;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--quiet);
-  margin: 8.5rem 0 5rem;
-}
-
-.column {
-  max-width: 33rem;
-  margin: 0 auto;
-}
+.column { max-width: 33rem; }
 
 .column p { margin: 0 0 1.5rem; }
 .column p:last-child { margin-bottom: 0; }
+
+/* section heading: all caps, near body size, tracked lightly */
+.label {
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--ink);
+  margin: 0.4rem 0 2.75rem;
+}
+
+/* subordinate heading inside a section: same treatment, quieter */
+.group {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--quiet);
+  margin: 3.5rem 0 1.75rem;
+}
+.group:first-of-type { margin-top: 0; }
 
 a.link {
   color: inherit;
@@ -90,83 +113,24 @@ a.link:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 em, i, cite { font-style: italic; }
 
-/* ---- home ---------------------------------------------------------------- */
-
-.opening {
-  min-height: 72vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.opening h1 {
-  font-family: var(--serif);
-  font-size: clamp(2.75rem, 8vw, 4.25rem);
-  font-weight: 400;
-  line-height: 1;
-  margin: 0 0 2.25rem;
-  letter-spacing: 0.005em;
-}
-
-.opening p {
-  margin: 0;
-  font-size: 1.1875rem;
-}
-
-.coda {
-  max-width: 30rem;
-  margin: 55vh auto 0;
-  text-align: center;
-  font-style: italic;
-  line-height: 1.7;
-  color: var(--ink);
-}
-
-/* ---- research: quiet theme line ------------------------------------------ */
-
-.themes {
-  font-family: var(--sans);
-  font-size: 0.6875rem;
-  letter-spacing: 0.13em;
-  line-height: 2.4;
-  text-align: center;
-  color: var(--quiet);
-  max-width: 34rem;
-  margin: 5.5rem auto 0;
-}
+.profiles { color: var(--quiet); }
+.profiles a.link { color: var(--quiet); }
 
 /* ---- bibliography -------------------------------------------------------- */
 
-.bibliography { margin-top: 9rem; }
-
-.group {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.0625rem;
-  font-weight: 400;
-  text-align: center;
-  color: var(--ink);
-  margin: 4.5rem 0 2.75rem;
-}
-.group:first-of-type { margin-top: 0; }
+.bibliography { margin-top: 6rem; }
+.bibliography .label { margin-bottom: 2.5rem; }
 
 .entry {
   font-size: 0.9375rem;
   line-height: 1.62;
-  margin: 0 0 1.9rem;
+  margin: 0 0 1.75rem;
 }
 .entry:last-child { margin-bottom: 0; }
 
-/* ---- writing / contact: centered entries --------------------------------- */
+/* ---- writing entries ----------------------------------------------------- */
 
-.centered { text-align: center; }
-
-.piece {
-  margin: 0 0 3.25rem;
-  text-align: center;
-}
+.piece { margin: 0 0 2.5rem; }
 .piece:last-child { margin-bottom: 0; }
 
 .piece .title { display: block; }
@@ -176,44 +140,30 @@ em, i, cite { font-style: italic; }
   font-size: 0.9375rem;
   color: var(--quiet);
   line-height: 1.6;
-  margin-top: 0.15rem;
+  margin-top: 0.1rem;
 }
 
-.address {
-  text-align: center;
-  line-height: 2.4;
-}
-.address .or {
-  font-family: var(--sans);
-  font-size: 0.6875rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--quiet);
-  display: block;
-  margin: 0.75rem 0;
-}
+/* ---- contact ------------------------------------------------------------- */
+
+.address { line-height: 2; }
 
 /* ---- small screens ------------------------------------------------------- */
 
-@media (max-width: 34rem) {
+@media (max-width: 44rem) {
   body { font-size: 1.125rem; }
 
-  /* separators wrap awkwardly at this width; space alone is enough */
-  .nav {
-    padding-top: 2.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.55rem 1.15rem;
+  .shell {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+    padding: 3.25rem 1.5rem 7rem;
   }
-  .nav .sep { display: none; }
 
-  .label { margin: 5.5rem 0 3.5rem; }
-  main { padding-bottom: 8rem; }
-  .opening { min-height: 62vh; }
+  .name { margin-bottom: 1.25rem; }
 
-  /* must clear the fold on tall phones, so the first screen is the name alone */
-  .coda { margin-top: 52vh; }
+  /* nav goes horizontal only once the sidebar has collapsed */
+  .nav { display: flex; flex-wrap: wrap; gap: 0 1.35rem; }
+  .nav a { padding: 0.15rem 0; }
 
-  .bibliography { margin-top: 6rem; }
+  .label { margin-top: 0; }
+  .bibliography { margin-top: 4.5rem; }
 }
