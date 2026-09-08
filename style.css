@@ -207,16 +207,14 @@ a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent);
 
 /* ---- homepage photograph -------------------------------------------------- */
 
-/* Within the 825px content area: photo 312, gap 24, text 489 — as measured. */
-.main--home {
-  display: grid;
-  grid-template-columns: 37.82% 59.27%;
-  column-gap: 2.91%;
-  align-items: start;
-  padding-top: 0.4rem;   /* the reference drops content slightly below the name */
-}
+/* Stacked, as the reference does it: photo and text share a left edge, the
+   photo is 61.2% of the text column, and 24px separates them. */
+.main--home { padding-top: 0.35rem; }
 
-.photo-col { margin: 0; }
+.photo-col {
+  width: 61.2%;
+  margin: 0 0 1.5rem;
+}
 
 .photo {
   display: block;
@@ -291,7 +289,7 @@ a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent);
     gap: 3.5rem;
     padding: 3.25rem 1.5rem 7rem;
   }
-  .main--home { grid-template-columns: 1fr; padding-top: 0; row-gap: 2.5rem; }
+  .main--home { padding-top: 0; }
 
   .name { margin-bottom: 1.25rem; }
 
@@ -302,5 +300,4 @@ a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent);
   .label { margin-top: 0; }
   .bibliography { margin-top: 4.5rem; }
 
-  .photo-col { max-width: 16rem; }
 }
