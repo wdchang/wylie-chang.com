@@ -170,11 +170,21 @@ a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent);
 
 /* ---- homepage photograph -------------------------------------------------- */
 
+/* the photograph takes a column of its own, beside the text, as on the references */
+.shell--home {
+  max-width: 64rem;
+  grid-template-columns: 10.5rem 11rem 1fr;
+  gap: 4rem;
+}
+
+.photo-col {
+  margin: 0.3rem 0 0;   /* optical alignment with the first line of text */
+}
+
 .photo {
   display: block;
   width: 100%;
   height: auto;
-  margin-top: 5.5rem;
 }
 
 /* ---- long-form prose ----------------------------------------------------- */
@@ -253,4 +263,7 @@ a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent);
 
   .label { margin-top: 0; }
   .bibliography { margin-top: 4.5rem; }
+
+  .shell--home { grid-template-columns: 1fr; }
+  .photo-col { max-width: 13rem; margin-top: 0; }
 }
