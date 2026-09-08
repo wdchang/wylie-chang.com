@@ -131,8 +131,9 @@ em, i, cite { font-style: italic; }
 /* title leads; everything else recedes */
 .entry .title {
   display: block;
-  font-size: 1.0625rem;
-  line-height: 1.5;
+  font-size: 1.1875rem;
+  font-weight: 500;
+  line-height: 1.45;
 }
 
 .entry .authors,
@@ -158,31 +159,50 @@ a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent);
 
 /* ---- teaching ------------------------------------------------------------ */
 
-.course { margin: 0 0 2.75rem; }
+.course { margin: 0 0 3.25rem; }
 .course:last-child { margin-bottom: 0; }
 
-/* course titles set italic, as work titles are elsewhere on the site */
 .course-title {
   display: block;
-  font-style: italic;
-  margin-bottom: 0.15rem;
+  font-size: 1.1875rem;
+  font-weight: 500;
+  line-height: 1.45;
+  margin: 0 0 0.4rem;
 }
 
-.course p { margin: 0; }
+.course-meta {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--quiet);
+  line-height: 1.55;
+  margin: -0.25rem 0 0.6rem;
+}
+
+/* description is supporting text, a step below the heading it follows */
+.course p {
+  margin: 0;
+  font-size: 1.0625rem;
+  line-height: 1.62;
+}
 
 /* ---- writing entries ----------------------------------------------------- */
 
 .piece { margin: 0 0 2.5rem; }
 .piece:last-child { margin-bottom: 0; }
 
-.piece .title { display: block; }
+.piece .title {
+  display: block;
+  font-size: 1.1875rem;
+  font-weight: 500;
+  line-height: 1.45;
+}
 
 .piece .where {
   display: block;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   color: var(--quiet);
-  line-height: 1.6;
-  margin-top: 0.1rem;
+  line-height: 1.55;
+  margin-top: 0.25rem;
 }
 
 /* ---- homepage photograph -------------------------------------------------- */
