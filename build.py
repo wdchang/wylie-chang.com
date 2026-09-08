@@ -9,7 +9,7 @@ Run:  python3 build.py
 import os, shutil
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-LANGS = ["en", "fr", "es", "pt"]
+LANGS = ["en", "fr", "es"]   # Portuguese translations remain below, unused
 PAGES = ["index", "research", "writing", "teaching", "cv", "contact"]
 
 # Long-form pieces are hand-written and English-only for now.
