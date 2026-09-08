@@ -174,6 +174,49 @@ TEACHING_NOTE = {
 "zh": "課程大綱可依需求提供。",
 }
 
+TUTORING = {
+"en": ("Tutoring",
+ "I also accept a limited number of clients for tutoring in the following areas:",
+ [("Test preparation", ["MCAT and general standardised test strategy and planning"]),
+  ("Natural sciences", ["Inorganic and organic chemistry",
+                        "Physics (typical first-year university sequence)",
+                        "Biology (molecular, cellular, organismic, evolutionary)",
+                        "Biochemistry"]),
+  ("Humanities", ["Creative non-fiction", "Narrative non-fiction", "Speechwriting",
+                  "Applications for graduate school and fellowships"])]),
+
+"fr": ("Cours particuliers",
+ "J’accepte également un nombre limité d’élèves en cours particuliers dans les domaines suivants :",
+ [("Préparation aux examens", ["MCAT et stratégie générale de préparation aux tests standardisés"]),
+  ("Sciences", ["Chimie inorganique et organique",
+                "Physique (première année universitaire)",
+                "Biologie (moléculaire, cellulaire, organismique, évolutive)",
+                "Biochimie"]),
+  ("Sciences humaines", ["Non-fiction créative", "Non-fiction narrative",
+                         "Rédaction de discours",
+                         "Candidatures aux études supérieures et aux bourses"])]),
+
+"es": ("Tutorías",
+ "También acepto un número limitado de alumnos para tutorías en las siguientes áreas:",
+ [("Preparación de exámenes", ["MCAT y estrategia general para exámenes estandarizados"]),
+  ("Ciencias naturales", ["Química inorgánica y orgánica",
+                          "Física (primer curso universitario)",
+                          "Biología (molecular, celular, organísmica, evolutiva)",
+                          "Bioquímica"]),
+  ("Humanidades", ["No ficción creativa", "No ficción narrativa", "Redacción de discursos",
+                   "Solicitudes de posgrado y becas"])]),
+
+"zh": ("個別指導",
+ "我也接受少量學生進行個別指導，領域如下：",
+ [("考試準備", ["MCAT 及標準化測驗的整體策略與規劃"]),
+  ("自然科學", ["無機化學與有機化學",
+              "物理（大學一年級課程）",
+              "生物學（分子、細胞、個體、演化）",
+              "生物化學"]),
+  ("人文", ["創意非虛構寫作", "敘事非虛構寫作", "演講稿寫作",
+           "研究所與獎助學金申請"])]),
+}
+
 CV_TEXT = {
 "en": "A copy of my curriculum vitae is available on request.",
 "fr": "Mon curriculum vitæ est disponible sur demande.",
@@ -346,6 +389,19 @@ def build_page(lang, page):
                 out.append('        <span class="course-meta">%s</span>' % meta)
             out.append("        <p>%s</p>\n      </div>\n" % desc)
         out.append('      <p class="profiles">%s</p>' % TEACHING_NOTE[lang])
+        head_, intro, areas = TUTORING[lang]
+        out.append('\n      <div class="tutoring">')
+        out.append('        <h2 class="group">%s</h2>' % head_)
+        out.append('        <p>%s</p>' % intro)
+        out.append('        <ul class="areas">')
+        for aname, items in areas:
+            out.append('          <li><span class="area-name">%s</span>' % aname)
+            out.append('            <ul>')
+            for it in items:
+                out.append('              <li>%s</li>' % it)
+            out.append('            </ul>')
+            out.append('          </li>')
+        out.append('        </ul>\n      </div>')
         out.append("    </div>\n  </main>")
 
     elif page == "arts":

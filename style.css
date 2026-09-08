@@ -100,6 +100,7 @@ html[lang="zh-Hant"] body {
 
 /* Chinese has no italic; keep emphasis upright on these pages */
 html[lang="zh-Hant"] .course-title,
+html[lang="zh-Hant"] .areas .area-name,
 html[lang="zh-Hant"] .coda { font-style: normal; }
 
 /* ---- language toggle ------------------------------------------------------ */
@@ -222,6 +223,27 @@ a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent);
 
 /* with a label above it, the description is plain body prose again */
 .course p { margin: 0; }
+
+/* ---- tutoring ------------------------------------------------------------
+   A list without bullets: indentation and italic carry the structure. */
+
+.tutoring { margin-top: 4.75rem; }
+.tutoring > .group { margin: 0 0 1.1rem; }
+.tutoring > p { margin: 0 0 1.9rem; }
+
+.areas,
+.areas ul { list-style: none; margin: 0; padding: 0; }
+
+.areas > li { margin: 0 0 1.6rem; }
+.areas > li:last-child { margin-bottom: 0; }
+
+.areas .area-name {
+  display: block;
+  font-style: italic;
+  margin-bottom: 0.25rem;
+}
+
+.areas ul { padding-left: 1.5rem; }
 
 /* ---- writing entries ----------------------------------------------------- */
 
