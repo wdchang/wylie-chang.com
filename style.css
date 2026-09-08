@@ -74,6 +74,22 @@ body {
 .nav a:hover { color: var(--ink); }
 .nav a[aria-current="page"] { color: var(--ink); }
 
+/* ---- language toggle ------------------------------------------------------ */
+
+.langs {
+  margin: 2.5rem 0 0;
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--quiet);
+}
+
+.langs a { color: var(--quiet); text-decoration: none; }
+.langs a:hover { color: var(--ink); }
+.langs a[aria-current="true"] { color: var(--ink); }
+.langs .sep { padding: 0 0.35em; color: #c4bdae; }
+
 /* ---- content ------------------------------------------------------------- */
 
 main { min-width: 0; }
