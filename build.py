@@ -47,10 +47,27 @@ TITLES = {                       # page labels and <title> stems
 
 # ---------------------------------------------------------------------- home
 BIO = {
-"en": "I am a researcher in the Department of Emergency Medicine at Massachusetts General Hospital in the Emergency Medical Services group. I study emergency medicine, with a particular focus on shared decision-making in psychiatric emergencies. My research is guided by questions about social order, interpersonal cooperation, and the exercise of agency within medical institutions. I maintain interests in the organisation, governance, and legitimacy of institutions and the history of science and medicine. Before turning toward medicine, I led several civic organisations, including Democracy House, Register2Vote.org, and Lead for America. I completed science coursework at Harvard University and read Philosophy, Politics, and Economics at Tufts University.",
-"fr": "Je suis chercheur au département de médecine d’urgence du Massachusetts General Hospital, au sein du groupe des services médicaux d’urgence. J’étudie la médecine d’urgence, en m’intéressant particulièrement à la décision partagée dans les urgences psychiatriques. Mes recherches sont guidées par des questions portant sur l’ordre social, la coopération interpersonnelle et l’exercice de l’agentivité au sein des institutions médicales. Je m’intéresse également à l’organisation, à la gouvernance et à la légitimité des institutions, ainsi qu’à l’histoire des sciences et de la médecine. Avant de me tourner vers la médecine, j’ai dirigé plusieurs organisations civiques, dont Democracy House, Register2Vote.org et Lead for America. J’ai suivi un cursus scientifique à l’université Harvard et étudié la philosophie, la politique et l’économie à l’université Tufts.",
-"es": "Soy investigador en el Departamento de Medicina de Urgencias del Massachusetts General Hospital, en el grupo de servicios médicos de emergencia. Estudio la medicina de urgencias, con especial atención a la toma de decisiones compartida en las urgencias psiquiátricas. Mi investigación se guía por preguntas sobre el orden social, la cooperación interpersonal y el ejercicio de la agencia dentro de las instituciones médicas. Mantengo interés por la organización, la gobernanza y la legitimidad de las instituciones, y por la historia de la ciencia y de la medicina. Antes de dedicarme a la medicina, dirigí varias organizaciones cívicas, entre ellas Democracy House, Register2Vote.org y Lead for America. Cursé estudios de ciencias en la Universidad Harvard y estudié Filosofía, Política y Economía en la Universidad Tufts.",
-"pt": "Sou pesquisador no Departamento de Medicina de Emergência do Massachusetts General Hospital, no grupo de serviços médicos de emergência. Estudo medicina de emergência, com atenção particular à decisão compartilhada em emergências psiquiátricas. Minha pesquisa é guiada por perguntas sobre ordem social, cooperação interpessoal e o exercício da agência dentro das instituições médicas. Mantenho interesse pela organização, governança e legitimidade das instituições e pela história da ciência e da medicina. Antes de me voltar para a medicina, liderei várias organizações cívicas, entre elas Democracy House, Register2Vote.org e Lead for America. Cursei disciplinas de ciências na Universidade Harvard e estudei Filosofia, Política e Economia na Universidade Tufts.",
+"en": [
+ "I am an EMT and researcher. I currently contribute to research at the Department of Emergency Medicine at Massachusetts General Hospital, in the Emergency Medical Services group. I study how patients and clinicians make decisions together under conditions of uncertainty and urgency.",
+ "I’m especially interested in psychiatric emergencies and the questions of agency, authority, and responsibility that arise.",
+ "My other primary interests are institutional governance; the history of science and medicine; and the role of healthcare institutions in civic life and democracy.",
+ "Previously, I led civic organisations, including Democracy House, Register2Vote.org, and Lead for America. I read Philosophy, Politics, and Economics at Tufts University and completed science coursework at Harvard University.",
+ "I live in Cambridge, Massachusetts.",
+],
+"fr": [
+ "Je suis technicien médical d’urgence (EMT) et chercheur. Je contribue actuellement aux travaux du département de médecine d’urgence du Massachusetts General Hospital, au sein du groupe des services médicaux d’urgence. J’étudie la manière dont patients et cliniciens prennent ensemble des décisions dans des conditions d’incertitude et d’urgence.",
+ "Je m’intéresse particulièrement aux urgences psychiatriques et aux questions d’agentivité, d’autorité et de responsabilité qui s’y posent.",
+ "Mes autres centres d’intérêt principaux sont la gouvernance institutionnelle ; l’histoire des sciences et de la médecine ; et le rôle des institutions de santé dans la vie civique et la démocratie.",
+ "Auparavant, j’ai dirigé des organisations civiques, dont Democracy House, Register2Vote.org et Lead for America. J’ai étudié la philosophie, la politique et l’économie à l’université Tufts et suivi un cursus scientifique à l’université Harvard.",
+ "Je vis à Cambridge, dans le Massachusetts.",
+],
+"es": [
+ "Soy técnico en emergencias médicas (EMT) e investigador. Actualmente colaboro en la investigación del Departamento de Medicina de Urgencias del Massachusetts General Hospital, en el grupo de servicios médicos de emergencia. Estudio cómo pacientes y clínicos toman decisiones conjuntamente en condiciones de incertidumbre y urgencia.",
+ "Me interesan especialmente las urgencias psiquiátricas y las preguntas sobre agencia, autoridad y responsabilidad que allí surgen.",
+ "Mis otros intereses principales son la gobernanza institucional; la historia de la ciencia y de la medicina; y el papel de las instituciones sanitarias en la vida cívica y la democracia.",
+ "Anteriormente dirigí organizaciones cívicas, entre ellas Democracy House, Register2Vote.org y Lead for America. Estudié Filosofía, Política y Economía en la Universidad Tufts y cursé estudios de ciencias en la Universidad Harvard.",
+ "Vivo en Cambridge, Massachusetts.",
+],
 }
 
 PHOTO_ALT = {
@@ -258,7 +275,13 @@ for _k, _v in {
 }.items():
     TITLES[_k]["zh"] = _v
 
-BIO["zh"] = "我是麻省總醫院急診醫學部緊急醫療服務組的研究員。我研究急診醫學，特別關注精神科急症中的醫病共享決策。我的研究由幾組問題所引導：社會秩序、人際合作，以及個人在醫療機構之中如何行使能動性。我也關注機構的組織、治理與正當性，以及科學與醫學史。在轉向醫學之前，我曾領導數個公民組織，包括 Democracy House、Register2Vote.org 與 Lead for America。我在哈佛大學修習理科課程，並在塔夫茨大學主修哲學、政治學與經濟學。"
+BIO["zh"] = [
+ "我是一名緊急醫療技術員（EMT）與研究員，目前參與麻省總醫院急診醫學部緊急醫療服務組的研究工作。我研究病人與臨床人員如何在不確定與緊急的情況下共同做出決定。",
+ "我特別關注精神科急症，以及其中浮現的能動性、權威與責任等問題。",
+ "我的其他主要興趣包括機構治理、科學與醫學史，以及醫療機構在公民生活與民主中的角色。",
+ "此前，我曾領導多個公民組織，包括 Democracy House、Register2Vote.org 與 Lead for America。我在塔夫茨大學主修哲學、政治學與經濟學，並在哈佛大學修習理科課程。",
+ "我住在麻州劍橋。",
+]
 
 PHOTO_ALT["zh"] = "黃昏時分，一群人坐在矮牆上仰望天空，背景是連綿的山丘。"
 
@@ -356,7 +379,9 @@ def build_page(lang, page):
     if page == "index":
         out.append('  <main class="main--home">\n    <div class="column">')
         out.append('      <figure class="photo-col">\n        <img class="photo" src="/photo.jpg" width="800" height="1067" alt="%s">\n      </figure>' % PHOTO_ALT[lang])
-        out.append("      <p>%s</p>\n    </div>\n  </main>" % BIO[lang])
+        for para in BIO[lang]:
+            out.append("      <p>%s</p>" % para)
+        out.append("    </div>\n  </main>")
 
     elif page == "research":
         out.append('  <main>\n    <h1 class="label">%s</h1>\n\n    <div class="column">' % L("research"))
