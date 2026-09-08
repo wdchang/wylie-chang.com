@@ -46,10 +46,10 @@ TITLES = {                       # page labels and <title> stems
 
 # ---------------------------------------------------------------------- home
 BIO = {
-"en": "My name is Wylie Chang 張振曦. I am a researcher in the Department of Emergency Medicine at Massachusetts General Hospital in the Emergency Medical Services group. I study emergency medicine, with a particular focus on shared decision-making in psychiatric emergencies. My research is guided by questions about social order, interpersonal cooperation, and the exercise of agency within medical institutions. I maintain interests in the organisation, governance, and legitimacy of institutions and the history of science and medicine. Before turning toward medicine, I led several civic organisations, including Democracy House, Register2Vote.org, and Lead for America. I completed science coursework at Harvard University and read Philosophy, Politics, and Economics at Tufts University.",
-"fr": "Je m’appelle Wylie Chang 張振曦. Je suis chercheur au département de médecine d’urgence du Massachusetts General Hospital, au sein du groupe des services médicaux d’urgence. J’étudie la médecine d’urgence, en m’intéressant particulièrement à la décision partagée dans les urgences psychiatriques. Mes recherches sont guidées par des questions portant sur l’ordre social, la coopération interpersonnelle et l’exercice de l’agentivité au sein des institutions médicales. Je m’intéresse également à l’organisation, à la gouvernance et à la légitimité des institutions, ainsi qu’à l’histoire des sciences et de la médecine. Avant de me tourner vers la médecine, j’ai dirigé plusieurs organisations civiques, dont Democracy House, Register2Vote.org et Lead for America. J’ai suivi un cursus scientifique à l’université Harvard et étudié la philosophie, la politique et l’économie à l’université Tufts.",
-"es": "Me llamo Wylie Chang 張振曦. Soy investigador en el Departamento de Medicina de Urgencias del Massachusetts General Hospital, en el grupo de servicios médicos de emergencia. Estudio la medicina de urgencias, con especial atención a la toma de decisiones compartida en las urgencias psiquiátricas. Mi investigación se guía por preguntas sobre el orden social, la cooperación interpersonal y el ejercicio de la agencia dentro de las instituciones médicas. Mantengo interés por la organización, la gobernanza y la legitimidad de las instituciones, y por la historia de la ciencia y de la medicina. Antes de dedicarme a la medicina, dirigí varias organizaciones cívicas, entre ellas Democracy House, Register2Vote.org y Lead for America. Cursé estudios de ciencias en la Universidad Harvard y estudié Filosofía, Política y Economía en la Universidad Tufts.",
-"pt": "Meu nome é Wylie Chang 張振曦. Sou pesquisador no Departamento de Medicina de Emergência do Massachusetts General Hospital, no grupo de serviços médicos de emergência. Estudo medicina de emergência, com atenção particular à decisão compartilhada em emergências psiquiátricas. Minha pesquisa é guiada por perguntas sobre ordem social, cooperação interpessoal e o exercício da agência dentro das instituições médicas. Mantenho interesse pela organização, governança e legitimidade das instituições e pela história da ciência e da medicina. Antes de me voltar para a medicina, liderei várias organizações cívicas, entre elas Democracy House, Register2Vote.org e Lead for America. Cursei disciplinas de ciências na Universidade Harvard e estudei Filosofia, Política e Economia na Universidade Tufts.",
+"en": "I am a researcher in the Department of Emergency Medicine at Massachusetts General Hospital in the Emergency Medical Services group. I study emergency medicine, with a particular focus on shared decision-making in psychiatric emergencies. My research is guided by questions about social order, interpersonal cooperation, and the exercise of agency within medical institutions. I maintain interests in the organisation, governance, and legitimacy of institutions and the history of science and medicine. Before turning toward medicine, I led several civic organisations, including Democracy House, Register2Vote.org, and Lead for America. I completed science coursework at Harvard University and read Philosophy, Politics, and Economics at Tufts University.",
+"fr": "Je suis chercheur au département de médecine d’urgence du Massachusetts General Hospital, au sein du groupe des services médicaux d’urgence. J’étudie la médecine d’urgence, en m’intéressant particulièrement à la décision partagée dans les urgences psychiatriques. Mes recherches sont guidées par des questions portant sur l’ordre social, la coopération interpersonnelle et l’exercice de l’agentivité au sein des institutions médicales. Je m’intéresse également à l’organisation, à la gouvernance et à la légitimité des institutions, ainsi qu’à l’histoire des sciences et de la médecine. Avant de me tourner vers la médecine, j’ai dirigé plusieurs organisations civiques, dont Democracy House, Register2Vote.org et Lead for America. J’ai suivi un cursus scientifique à l’université Harvard et étudié la philosophie, la politique et l’économie à l’université Tufts.",
+"es": "Soy investigador en el Departamento de Medicina de Urgencias del Massachusetts General Hospital, en el grupo de servicios médicos de emergencia. Estudio la medicina de urgencias, con especial atención a la toma de decisiones compartida en las urgencias psiquiátricas. Mi investigación se guía por preguntas sobre el orden social, la cooperación interpersonal y el ejercicio de la agencia dentro de las instituciones médicas. Mantengo interés por la organización, la gobernanza y la legitimidad de las instituciones, y por la historia de la ciencia y de la medicina. Antes de dedicarme a la medicina, dirigí varias organizaciones cívicas, entre ellas Democracy House, Register2Vote.org y Lead for America. Cursé estudios de ciencias en la Universidad Harvard y estudié Filosofía, Política y Economía en la Universidad Tufts.",
+"pt": "Sou pesquisador no Departamento de Medicina de Emergência do Massachusetts General Hospital, no grupo de serviços médicos de emergência. Estudo medicina de emergência, com atenção particular à decisão compartilhada em emergências psiquiátricas. Minha pesquisa é guiada por perguntas sobre ordem social, cooperação interpessoal e o exercício da agência dentro das instituições médicas. Mantenho interesse pela organização, governança e legitimidade das instituições e pela história da ciência e da medicina. Antes de me voltar para a medicina, liderei várias organizações cívicas, entre elas Democracy House, Register2Vote.org e Lead for America. Cursei disciplinas de ciências na Universidade Harvard e estudei Filosofia, Política e Economia na Universidade Tufts.",
 }
 
 PHOTO_ALT = {
@@ -136,21 +136,21 @@ ENGLISH_NOTE = {
 
 # ------------------------------------------------------------------ teaching
 COURSES = {
-"en": [("The American Soul", "Tufts University &middot; with Hayley Oliver-Smith",
+"en": [("The American Soul", "Tufts University, 2018 &middot; with Hayley Oliver-Smith",
         "As more Americans identify as spiritual but not religious, this course asks what spirituality means in twenty-first-century America, and what that implies for civic life. Through contemplative practice in class, personal reflection, and discussion of primary texts, images, and stories, students examine their own assumptions about religion, spirituality, and contemplative traditions in the United States."),
-       ("Prison Justice &amp; Education", "Tufts Prison Initiative &middot; co-authored with Dr. Hilary Binda",
+       ("Prison Justice &amp; Education", "Tufts Prison Initiative, 2018 &middot; co-authored with Dr. Hilary Binda",
         "A syllabus written for the inaugural curriculum of the Tufts Prison Initiative, in which Tufts undergraduates took credit-bearing seminars alongside incarcerated men at Souza-Baranowski Correctional Center, a maximum-security prison in Lancaster, Massachusetts. The course explores confinement through three themes: education in prison, marginalised identities in captivity, and social movements to reform and abolish prisons.")],
-"fr": [("The American Soul", "Université Tufts &middot; avec Hayley Oliver-Smith",
+"fr": [("The American Soul", "Université Tufts, 2018 &middot; avec Hayley Oliver-Smith",
         "Alors qu’un nombre croissant d’Américains se disent spirituels sans être religieux, ce cours interroge ce que signifie la spiritualité dans l’Amérique du XXI<sup>e</sup> siècle et ce qu’elle implique pour la vie civique. À travers la pratique contemplative en classe, la réflexion personnelle et la discussion de textes, d’images et de récits, les étudiants examinent leurs propres présupposés sur la religion, la spiritualité et les traditions contemplatives aux États-Unis."),
-       ("Prison Justice &amp; Education", "Tufts Prison Initiative &middot; coécrit avec la D<sup>re</sup> Hilary Binda",
+       ("Prison Justice &amp; Education", "Tufts Prison Initiative, 2018 &middot; coécrit avec la D<sup>re</sup> Hilary Binda",
         "Un programme rédigé pour le curriculum inaugural de la Tufts Prison Initiative, dans le cadre de laquelle des étudiants de Tufts ont suivi des séminaires crédités aux côtés d’hommes incarcérés au Souza-Baranowski Correctional Center, une prison de haute sécurité à Lancaster, dans le Massachusetts. Le cours aborde l’enfermement selon trois axes : l’éducation en prison, les identités marginalisées en captivité, et les mouvements sociaux visant à réformer et à abolir les prisons.")],
-"es": [("The American Soul", "Universidad Tufts &middot; con Hayley Oliver-Smith",
+"es": [("The American Soul", "Universidad Tufts, 2018 &middot; con Hayley Oliver-Smith",
         "A medida que más estadounidenses se identifican como espirituales pero no religiosos, este curso pregunta qué significa la espiritualidad en la América del siglo XXI y qué implica para la vida cívica. Mediante la práctica contemplativa en clase, la reflexión personal y la discusión de textos, imágenes e historias, los estudiantes examinan sus propios supuestos sobre la religión, la espiritualidad y las tradiciones contemplativas en Estados Unidos."),
-       ("Prison Justice &amp; Education", "Tufts Prison Initiative &middot; coescrito con la Dra. Hilary Binda",
+       ("Prison Justice &amp; Education", "Tufts Prison Initiative, 2018 &middot; coescrito con la Dra. Hilary Binda",
         "Un programa escrito para el currículo inaugural de la Tufts Prison Initiative, en el que estudiantes de Tufts cursaron seminarios con créditos junto a hombres encarcelados en el Souza-Baranowski Correctional Center, una prisión de máxima seguridad en Lancaster, Massachusetts. El curso explora el encierro a partir de tres ejes: la educación en prisión, las identidades marginadas en cautiverio y los movimientos sociales para reformar y abolir las prisiones.")],
-"pt": [("The American Soul", "Universidade Tufts &middot; com Hayley Oliver-Smith",
+"pt": [("The American Soul", "Universidade Tufts, 2018 &middot; com Hayley Oliver-Smith",
         "À medida que mais estadunidenses se identificam como espiritualizados, mas não religiosos, este curso pergunta o que significa espiritualidade nos Estados Unidos do século XXI e o que isso implica para a vida cívica. Por meio da prática contemplativa em sala, da reflexão pessoal e da discussão de textos, imagens e histórias, os estudantes examinam seus próprios pressupostos sobre religião, espiritualidade e tradições contemplativas nos Estados Unidos."),
-       ("Prison Justice &amp; Education", "Tufts Prison Initiative &middot; coescrito com a Dra. Hilary Binda",
+       ("Prison Justice &amp; Education", "Tufts Prison Initiative, 2018 &middot; coescrito com a Dra. Hilary Binda",
         "Um programa escrito para o currículo inaugural da Tufts Prison Initiative, no qual estudantes de Tufts cursaram seminários com créditos ao lado de homens encarcerados no Souza-Baranowski Correctional Center, uma prisão de segurança máxima em Lancaster, Massachusetts. O curso explora o confinamento a partir de três eixos: a educação na prisão, as identidades marginalizadas em cativeiro e os movimentos sociais para reformar e abolir as prisões.")],
 }
 
@@ -191,6 +191,11 @@ LANG_LABEL = {"en": "EN", "fr": "FR", "es": "ES", "pt": "PT", "zh": "中文"}
 NAME = {l: "Wylie Chang" for l in LANGS}
 NAME["zh"] = "張振曦"
 
+# Latin pages lead with the romanisation; the Chinese page leads with 張振曦.
+_LATIN = 'Wylie Daniel<br>Chen-hsi Chang<span class="name-zh">張振曦</span>'
+MASTHEAD = {l: _LATIN for l in LANGS}
+MASTHEAD["zh"] = '<span class="name-zh lead">張振曦</span>Wylie Daniel<br>Chen-hsi Chang'
+
 NAV["zh"] = [("research", "研究"), ("writing", "文章"),
              ("teaching", "教學"), ("cv", "履歷"), ("contact", "聯絡")]
 
@@ -201,7 +206,7 @@ for _k, _v in {
 }.items():
     TITLES[_k]["zh"] = _v
 
-BIO["zh"] = "我叫張振曦（Wylie Chang）。我是麻省總醫院急診醫學部緊急醫療服務組的研究員。我研究急診醫學，特別關注精神科急症中的醫病共享決策。我的研究由幾組問題所引導：社會秩序、人際合作，以及個人在醫療機構之中如何行使能動性。我也關注機構的組織、治理與正當性，以及科學與醫學史。在轉向醫學之前，我曾領導數個公民組織，包括 Democracy House、Register2Vote.org 與 Lead for America。我在哈佛大學修習理科課程，並在塔夫茨大學主修哲學、政治學與經濟學。"
+BIO["zh"] = "我是麻省總醫院急診醫學部緊急醫療服務組的研究員。我研究急診醫學，特別關注精神科急症中的醫病共享決策。我的研究由幾組問題所引導：社會秩序、人際合作，以及個人在醫療機構之中如何行使能動性。我也關注機構的組織、治理與正當性，以及科學與醫學史。在轉向醫學之前，我曾領導數個公民組織，包括 Democracy House、Register2Vote.org 與 Lead for America。我在哈佛大學修習理科課程，並在塔夫茨大學主修哲學、政治學與經濟學。"
 
 PHOTO_ALT["zh"] = "黃昏時分，一群人坐在矮牆上仰望天空，背景是連綿的山丘。"
 
@@ -223,9 +228,9 @@ PIECES["zh"] = [
 ]
 
 COURSES["zh"] = [
- ("The American Soul", "塔夫茨大學 &middot; 與 Hayley Oliver-Smith 合作",
+ ("The American Soul", "塔夫茨大學，2018 &middot; 與 Hayley Oliver-Smith 合作",
   "隨著愈來愈多美國人自認「有靈性但不屬於任何宗教」，本課程探問：在二十一世紀的美國，靈性意味著什麼，又對公民生活有何影響。透過課堂上的靜觀練習、個人省思，以及對文本、影像與故事的討論，學生檢視自己對於美國宗教、靈性與靜觀傳統的既有假設。"),
- ("Prison Justice &amp; Education", "塔夫茨監獄計畫 &middot; 與 Hilary Binda 博士合著",
+ ("Prison Justice &amp; Education", "塔夫茨監獄計畫，2018 &middot; 與 Hilary Binda 博士合著",
   "這份課程大綱是為塔夫茨監獄計畫（Tufts Prison Initiative）的首屆課程所撰寫。在該計畫中，塔夫茨大學的大學部學生與麻州蘭卡斯特 Souza-Baranowski 懲教中心（一所最高戒護等級的監獄）的受刑人一同修習可採計學分的研討課。本課程從三個主題探討監禁：獄中教育、囚禁中的邊緣身分，以及改革與廢除監獄的社會運動。"),
 ]
 
@@ -277,7 +282,7 @@ def sidebar(lang, page):
     </nav>
     <p class="langs">%s</p>
   </header>
-""" % (base(lang), home, NAME[lang], "\n".join(items), "".join(langs))
+""" % (base(lang), home, MASTHEAD[lang], "\n".join(items), "".join(langs))
 
 
 def entry_html(link, title, authors, source):

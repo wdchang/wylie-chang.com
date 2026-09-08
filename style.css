@@ -54,12 +54,20 @@ body {
   display: block;
   font-family: var(--serif);
   font-size: 1.4rem;
-  line-height: 1.35;
+  line-height: 1.28;
   color: var(--ink);
   text-decoration: none;
   margin-bottom: 1.75rem;
 }
 .name:hover { color: var(--accent); }
+
+.name-zh {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.09em;
+}
+.name-zh.lead { margin: 0 0 0.45rem; }
 
 .nav a {
   display: block;
