@@ -10,7 +10,7 @@ import os, shutil
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 LANGS = ["en", "fr", "es"]   # Portuguese translations remain below, unused
-PAGES = ["index", "research", "writing", "teaching", "cv", "contact"]
+PAGES = ["index", "research", "writing", "teaching", "arts", "cv", "contact"]
 
 # Long-form pieces are hand-written and English-only for now.
 LONGFORM = ["oration.html", "gratitude.html"]
@@ -23,11 +23,11 @@ def base(lang):
 # ---------------------------------------------------------------- navigation
 NAV = {
     "en": [("research", "Research"), ("writing", "Writing"),
-           ("teaching", "Teaching"), ("cv", "CV"), ("contact", "Contact")],
+           ("teaching", "Teaching"), ("arts", "Arts"), ("cv", "CV"), ("contact", "Contact")],
     "fr": [("research", "Recherche"), ("writing", "Écrits"),
-           ("teaching", "Enseignement"), ("cv", "CV"), ("contact", "Contact")],
+           ("teaching", "Enseignement"), ("arts", "Arts"), ("cv", "CV"), ("contact", "Contact")],
     "es": [("research", "Investigación"), ("writing", "Escritos"),
-           ("teaching", "Docencia"), ("cv", "CV"), ("contact", "Contacto")],
+           ("teaching", "Docencia"), ("arts", "Artes"), ("cv", "CV"), ("contact", "Contacto")],
     "pt": [("research", "Pesquisa"), ("writing", "Escritos"),
            ("teaching", "Ensino"), ("cv", "CV"), ("contact", "Contato")],
 }
@@ -36,6 +36,7 @@ TITLES = {                       # page labels and <title> stems
     "research":  {"en": "Research", "fr": "Recherche", "es": "Investigación", "pt": "Pesquisa"},
     "writing":   {"en": "Writing", "fr": "Écrits", "es": "Escritos", "pt": "Escritos"},
     "teaching":  {"en": "Teaching", "fr": "Enseignement", "es": "Docencia", "pt": "Ensino"},
+    "arts":      {"en": "Arts", "fr": "Arts", "es": "Artes", "pt": "Artes"},
     "cv":        {"en": "Curriculum Vitae", "fr": "Curriculum vitæ", "es": "Currículum vítae", "pt": "Currículo"},
     "contact":   {"en": "Contact", "fr": "Contact", "es": "Contacto", "pt": "Contato"},
     "publications": {"en": "Publications", "fr": "Publications", "es": "Publicaciones", "pt": "Publicações"},
@@ -155,6 +156,13 @@ COURSES = {
 }
 
 # ------------------------------------------------------------------ cv, contact
+ARTS_TEXT = {
+"en": 'I lead an arts community space in Cambridge. Learn more at <a class="link" href="https://farwellarts.com">Farwell Arts</a>.',
+"fr": 'Je dirige un espace communautaire consacré aux arts à Cambridge. Pour en savoir plus : <a class="link" href="https://farwellarts.com">Farwell Arts</a>.',
+"es": 'Dirijo un espacio comunitario dedicado a las artes en Cambridge. Más información en <a class="link" href="https://farwellarts.com">Farwell Arts</a>.',
+"zh": '我在麻州劍橋主持一個藝術社群空間。更多資訊請見 <a class="link" href="https://farwellarts.com">Farwell Arts</a>。',
+}
+
 TEACHING_NOTE = {
 "en": "Course syllabi available upon request.",
 # "programme(s) de cours" keeps the wording consistent with how the Prison
@@ -197,10 +205,10 @@ MASTHEAD = {l: _LATIN for l in LANGS}
 MASTHEAD["zh"] = '<span class="name-zh lead">張振曦</span>Wylie Daniel<br>Chen-hsi Chang'
 
 NAV["zh"] = [("research", "研究"), ("writing", "文章"),
-             ("teaching", "教學"), ("cv", "履歷"), ("contact", "聯絡")]
+             ("teaching", "教學"), ("arts", "藝術"), ("cv", "履歷"), ("contact", "聯絡")]
 
 for _k, _v in {
-    "research": "研究", "writing": "文章", "teaching": "教學",
+    "research": "研究", "writing": "文章", "teaching": "教學", "arts": "藝術",
     "cv": "履歷", "contact": "聯絡", "publications": "著作",
     "journal": "期刊論文", "progress": "進行中", "conference": "研討會發表",
 }.items():
@@ -338,6 +346,9 @@ def build_page(lang, page):
             out.append("        <p>%s</p>\n      </div>\n" % desc)
         out.append('      <p class="profiles">%s</p>' % TEACHING_NOTE[lang])
         out.append("    </div>\n  </main>")
+
+    elif page == "arts":
+        out.append('  <main>\n    <h1 class="label">%s</h1>\n    <div class="column">\n      <p>%s</p>\n    </div>\n  </main>' % (L("arts"), ARTS_TEXT[lang]))
 
     elif page == "cv":
         out.append('  <main>\n    <h1 class="label">%s</h1>\n    <div class="column">\n      <p>%s</p>\n    </div>\n  </main>' % (L("cv"), CV_TEXT[lang]))
