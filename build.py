@@ -83,19 +83,19 @@ RESEARCH = {
  "My primary line of research concerns shared decision-making in emergency medicine, particularly in psychiatric emergencies and other encounters in which the conditions for ordinary deliberation are complicated by uncertain capacity and lack of rapport. I am interested in how patients and clinicians establish workable forms of cooperation under these conditions, and how trust, authority, and responsibility are negotiated in acute care.",
  "Drawing on clinical models of shared decision-making, Anselm Strauss’s concept of negotiated order, and practices from civic organising and advocacy, I examine how clinicians can protect patient agency during crises.",
  "I also maintain a line of research on emergency medical services, examining how decentralised systems and the discretion delegated to dispatchers, clinicians, and organisations shape variation in care and outcomes.",
- "A further area of my work examines civic engagement and political participation in healthcare settings.",
+ "A further area of my work examines civic engagement in healthcare settings.",
 ],
 "fr": [
  "Mon principal axe de recherche porte sur la décision partagée en médecine d’urgence, en particulier dans les urgences psychiatriques et dans les situations où les conditions d’une délibération ordinaire sont compliquées par une capacité incertaine et par l’absence de lien de confiance. Je m’intéresse à la manière dont patients et cliniciens établissent des formes de coopération praticables dans ces conditions, et à la façon dont la confiance, l’autorité et la responsabilité se négocient dans les soins aigus.",
  "En m’appuyant sur les modèles cliniques de la décision partagée, sur la notion d’ordre négocié d’Anselm Strauss et sur des pratiques issues de l’organisation civique et du plaidoyer, j’examine comment les cliniciens peuvent protéger l’agentivité du patient en situation de crise.",
  "Je poursuis également des recherches sur les services médicaux d’urgence, en examinant comment les systèmes décentralisés et le pouvoir d’appréciation délégué aux régulateurs, aux cliniciens et aux organisations produisent des variations dans les soins et les résultats.",
- "Un autre volet de mon travail porte sur l’engagement civique et la participation politique dans les établissements de santé.",
+ "Un autre volet de mon travail porte sur l’engagement civique dans les établissements de santé.",
 ],
 "es": [
  "Mi principal línea de investigación aborda la toma de decisiones compartida en medicina de urgencias, en particular en las urgencias psiquiátricas y en aquellos encuentros en los que las condiciones para la deliberación ordinaria se ven complicadas por una capacidad incierta y por la falta de vínculo. Me interesa cómo pacientes y clínicos establecen formas viables de cooperación en esas condiciones, y cómo se negocian la confianza, la autoridad y la responsabilidad en la atención aguda.",
  "A partir de los modelos clínicos de decisión compartida, del concepto de orden negociado de Anselm Strauss y de prácticas provenientes de la organización cívica y la incidencia, examino cómo los clínicos pueden proteger la agencia del paciente durante las crisis.",
  "También mantengo una línea de investigación sobre los servicios médicos de emergencia, en la que examino cómo los sistemas descentralizados y la discrecionalidad delegada a operadores, clínicos y organizaciones producen variaciones en la atención y en los resultados.",
- "Otra área de mi trabajo examina la participación cívica y política en los entornos sanitarios.",
+ "Otra área de mi trabajo examina la participación cívica en los entornos sanitarios.",
 ],
 }
 
@@ -299,7 +299,7 @@ RESEARCH["zh"] = [
  "我的主要研究方向是急診醫學中的共享決策，特別是精神科急症，以及那些因決策能力不確定、醫病之間尚未建立信任關係而使一般審議條件受到干擾的情境。我關心病人與臨床人員在這些條件下如何建立可行的合作方式，以及信任、權威與責任如何在急性照護中被協商。",
  "我援引共享決策的臨床模型、Anselm Strauss 的「協商秩序」概念，以及公民組織與倡議工作的實踐，探討臨床人員如何在危機中保護病人的能動性。",
  "我也持續研究緊急醫療服務，探討分權化的系統，以及授予派遣人員、臨床人員與機構的裁量權，如何造成照護方式與治療結果的差異。",
- "我工作的另一個面向，是醫療場域中的公民參與與政治參與。",
+ "我工作的另一個面向，是醫療場域中的公民參與。",
 ]
 
 PROFILES["zh"] = '我的同儕審查論文可於 <a class="link" href="https://scholar.google.com/citations?user=UE97hJIAAAAJ&amp;hl=en">Google Scholar</a> 個人頁面查閱。我的 ORCID 為 <a class="link" href="https://orcid.org/0009-0002-3935-5418">0009-0002-3935-5418</a>。'
