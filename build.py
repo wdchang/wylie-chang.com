@@ -155,6 +155,16 @@ COURSES = {
 }
 
 # ------------------------------------------------------------------ cv, contact
+TEACHING_NOTE = {
+"en": "Course syllabi available upon request.",
+# "programme(s) de cours" keeps the wording consistent with how the Prison
+# Justice syllabus is described in each language above.
+"fr": "Les programmes de cours sont disponibles sur demande.",
+"es": "Los programas de los cursos están disponibles a solicitud.",
+"pt": "Os programas dos cursos estão disponíveis mediante solicitação.",
+"zh": "課程大綱可依需求提供。",
+}
+
 CV_TEXT = {
 "en": "A copy of my curriculum vitae is available on request.",
 "fr": "Mon curriculum vitæ est disponible sur demande.",
@@ -321,6 +331,7 @@ def build_page(lang, page):
             if meta:
                 out.append('        <span class="course-meta">%s</span>' % meta)
             out.append("        <p>%s</p>\n      </div>\n" % desc)
+        out.append('      <p class="profiles">%s</p>' % TEACHING_NOTE[lang])
         out.append("    </div>\n  </main>")
 
     elif page == "cv":
