@@ -118,13 +118,13 @@ WRITING_INTRO = {
 }
 
 PIECES = {
-"en": [("/gratitude.html", "&ldquo;The &lsquo;Way&rsquo; of Gratitude.&rdquo;", "Oration, Appleton Chapel, Harvard University, February 2025."),
+"en": [("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, Harvard University, 10 February 2025."),
        ("/oration.html", "Officiant Oration for the wedding of Nina Roussille and Ameet Kallarackal.", "Aix-en-Provence, France, June 2026.")],
-"fr": [("/gratitude.html", "&ldquo;The &lsquo;Way&rsquo; of Gratitude.&rdquo;", "Allocution, Appleton Chapel, université Harvard, février 2025."),
+"fr": [("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, université Harvard, 10 février 2025."),
        ("/oration.html", "Allocution de célébrant pour le mariage de Nina Roussille et Ameet Kallarackal.", "Aix-en-Provence, France, juin 2026.")],
-"es": [("/gratitude.html", "&ldquo;The &lsquo;Way&rsquo; of Gratitude.&rdquo;", "Alocución, Appleton Chapel, Universidad Harvard, febrero de 2025."),
+"es": [("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, Universidad Harvard, 10 de febrero de 2025."),
        ("/oration.html", "Alocución como oficiante en la boda de Nina Roussille y Ameet Kallarackal.", "Aix-en-Provence, Francia, junio de 2026.")],
-"pt": [("/gratitude.html", "&ldquo;The &lsquo;Way&rsquo; of Gratitude.&rdquo;", "Alocução, Appleton Chapel, Universidade Harvard, fevereiro de 2025."),
+"pt": [("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, Universidade Harvard, 10 de fevereiro de 2025."),
        ("/oration.html", "Alocução como celebrante no casamento de Nina Roussille e Ameet Kallarackal.", "Aix-en-Provence, França, junho de 2026.")],
 }
 
@@ -229,8 +229,8 @@ WRITING_INTRO["zh"] = "我在不同場合寫作與演講。以下是近期的一
 ENGLISH_NOTE["zh"] = "以下文稿僅有英文版本。"
 
 PIECES["zh"] = [
- ("/gratitude.html", "&ldquo;The &lsquo;Way&rsquo; of Gratitude.&rdquo;",
-  "講稿，哈佛大學紀念教堂 Appleton Chapel，2025 年 2 月。"),
+ ("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe",
+  "Morning Prayers，哈佛大學 Appleton Chapel，2025 年 2 月 10 日。"),
  ("/oration.html", "為 Nina Roussille 與 Ameet Kallarackal 婚禮所作的證婚致詞。",
   "法國普羅旺斯艾克斯，2026 年 6 月。"),
 ]
