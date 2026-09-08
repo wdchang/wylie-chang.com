@@ -119,13 +119,13 @@ WRITING_INTRO = {
 
 PIECES = {
 "en": [("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, Harvard University, 10 February 2025."),
-       ("/oration.html", "Officiant Oration for the wedding of Nina Roussille and Ameet Kallarackal.", "Aix-en-Provence, France, June 2026.")],
+       ("/oration.html", "May you keep dancing", "Officiant oration, Marriage of Nina Roussille and Ameet Kallarackal, Aix-en-Provence, France, 20 June 2026.")],
 "fr": [("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, université Harvard, 10 février 2025."),
-       ("/oration.html", "Allocution de célébrant pour le mariage de Nina Roussille et Ameet Kallarackal.", "Aix-en-Provence, France, juin 2026.")],
+       ("/oration.html", "May you keep dancing", "Allocution de célébrant, mariage de Nina Roussille et Ameet Kallarackal, Aix-en-Provence, France, 20 juin 2026.")],
 "es": [("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, Universidad Harvard, 10 de febrero de 2025."),
-       ("/oration.html", "Alocución como oficiante en la boda de Nina Roussille y Ameet Kallarackal.", "Aix-en-Provence, Francia, junio de 2026.")],
+       ("/oration.html", "May you keep dancing", "Alocución como oficiante, boda de Nina Roussille y Ameet Kallarackal, Aix-en-Provence, Francia, 20 de junio de 2026.")],
 "pt": [("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, Universidade Harvard, 10 de fevereiro de 2025."),
-       ("/oration.html", "Alocução como celebrante no casamento de Nina Roussille e Ameet Kallarackal.", "Aix-en-Provence, França, junho de 2026.")],
+       ("/oration.html", "May you keep dancing", "Alocução como celebrante, casamento de Nina Roussille e Ameet Kallarackal, Aix-en-Provence, França, 20 de junho de 2026.")],
 }
 
 ENGLISH_NOTE = {
@@ -231,8 +231,8 @@ ENGLISH_NOTE["zh"] = "以下文稿僅有英文版本。"
 PIECES["zh"] = [
  ("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe",
   "Morning Prayers，哈佛大學 Appleton Chapel，2025 年 2 月 10 日。"),
- ("/oration.html", "為 Nina Roussille 與 Ameet Kallarackal 婚禮所作的證婚致詞。",
-  "法國普羅旺斯艾克斯，2026 年 6 月。"),
+ ("/oration.html", "May you keep dancing",
+  "證婚致詞，Nina Roussille 與 Ameet Kallarackal 的婚禮，法國普羅旺斯艾克斯，2026 年 6 月 20 日。"),
 ]
 
 COURSES["zh"] = [
