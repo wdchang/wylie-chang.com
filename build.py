@@ -129,7 +129,8 @@ ENTRIES = {
 "conference": [
  (None, "Practicing solidarity: lessons from EMS and community organizing",
   '<span class="self">Chang WD</span>',
-  'National Emergency Medical Services Physicians Annual Meeting, Tampa, FL, January 2026'),
+  'National Emergency Medical Services Physicians Annual Meeting, Tampa, FL, January 2026',
+  'Best New Speaker (top two presentations)'),
  (None, "Patient characteristics and short-term outcomes associated with helicopter EMS versus ground ambulance transport for out-of-hospital cardiac arrest",
   'Misra A, <span class="self">Chang WD</span>, Peters GA, Goldberg SA, Norman J, Seethala R, Cash RE',
   'National Association of EMS Physicians Annual Meeting, Tampa, FL, January 2026'),
@@ -372,13 +373,15 @@ def sidebar(lang, page):
 """ % (base(lang), home, MASTHEAD[lang], "\n".join(items), "".join(langs))
 
 
-def entry_html(link, title, authors, source):
+def entry_html(link, title, authors, source, award=None):
     t = ('<a class="title title-link" href="%s">%s</a>' % (link, title)) if link \
         else ('<span class="title">%s</span>' % title)
     out = ['      <div class="entry">', "        " + t,
            '        <span class="authors">%s</span>' % authors]
     if source:
         out.append('        <span class="source">%s</span>' % source)
+    if award:
+        out.append('        <span class="award">%s</span>' % award)
     out.append("      </div>")
     return "\n".join(out)
 

@@ -101,6 +101,7 @@ html[lang="zh-Hant"] body {
 /* Chinese has no italic; keep emphasis upright on these pages */
 html[lang="zh-Hant"] .course-title,
 html[lang="zh-Hant"] .areas .area-name,
+html[lang="zh-Hant"] .entry .award,
 html[lang="zh-Hant"] .coda { font-style: normal; }
 
 /* ---- language toggle ------------------------------------------------------ */
@@ -182,6 +183,15 @@ em, i, cite { font-style: italic; }
   font-size: 1.0625rem;
   font-weight: 500;
   line-height: 1.45;
+}
+
+/* a distinction, noted rather than announced */
+.entry .award {
+  display: block;
+  font-style: italic;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--quiet);
 }
 
 .entry .authors,
