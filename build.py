@@ -111,21 +111,22 @@ ENTRIES = {
 
 # ------------------------------------------------------------------- writing
 WRITING_INTRO = {
-"en": "I enjoy writing and speaking in various contexts. Some examples of recent work are below.",
-"fr": "J’écris et je prends la parole dans des contextes variés. Voici quelques exemples de travaux récents.",
-"es": "Escribo y hablo en público en contextos diversos. A continuación, algunos ejemplos de trabajos recientes.",
-"pt": "Escrevo e falo em contextos variados. Abaixo, alguns exemplos de trabalhos recentes.",
+"en": "Selected writing and spoken work from the past few years.",
+"fr": "Choix d’écrits et de prises de parole de ces dernières années.",
+"es": "Selección de escritos e intervenciones orales de los últimos años.",
+"pt": "Seleção de escritos e intervenções orais dos últimos anos.",
 }
 
+# Reverse chronological: most recent first.
 PIECES = {
-"en": [("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, Harvard University, 10 February 2025."),
-       ("/oration.html", "May you keep dancing", "Officiant oration, Marriage of Nina Roussille and Ameet Kallarackal, Aix-en-Provence, France, 20 June 2026.")],
-"fr": [("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, université Harvard, 10 février 2025."),
-       ("/oration.html", "May you keep dancing", "Allocution de célébrant, mariage de Nina Roussille et Ameet Kallarackal, Aix-en-Provence, France, 20 juin 2026.")],
-"es": [("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, Universidad Harvard, 10 de febrero de 2025."),
-       ("/oration.html", "May you keep dancing", "Alocución como oficiante, boda de Nina Roussille y Ameet Kallarackal, Aix-en-Provence, Francia, 20 de junio de 2026.")],
-"pt": [("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, Universidade Harvard, 10 de fevereiro de 2025."),
-       ("/oration.html", "May you keep dancing", "Alocução como celebrante, casamento de Nina Roussille e Ameet Kallarackal, Aix-en-Provence, França, 20 de junho de 2026.")],
+"en": [("/oration.html", "May you keep dancing", "Officiant oration, Marriage of Nina Roussille and Ameet Kallarackal, Aix-en-Provence, France, 20 June 2026."),
+       ("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, Harvard University, 10 February 2025.")],
+"fr": [("/oration.html", "May you keep dancing", "Allocution de célébrant, mariage de Nina Roussille et Ameet Kallarackal, Aix-en-Provence, France, 20 juin 2026."),
+       ("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, université Harvard, 10 février 2025.")],
+"es": [("/oration.html", "May you keep dancing", "Alocución como oficiante, boda de Nina Roussille y Ameet Kallarackal, Aix-en-Provence, Francia, 20 de junio de 2026."),
+       ("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, Universidad Harvard, 10 de febrero de 2025.")],
+"pt": [("/oration.html", "May you keep dancing", "Alocução como celebrante, casamento de Nina Roussille e Ameet Kallarackal, Aix-en-Provence, França, 20 de junho de 2026."),
+       ("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, Universidade Harvard, 10 de fevereiro de 2025.")],
 }
 
 ENGLISH_NOTE = {
@@ -225,14 +226,14 @@ RESEARCH["zh"] = [
 
 PROFILES["zh"] = '我的同儕審查論文可於 <a class="link" href="https://scholar.google.com/citations?user=UE97hJIAAAAJ&amp;hl=en">Google Scholar</a> 個人頁面查閱。我的 ORCID 為 <a class="link" href="https://orcid.org/0009-0002-3935-5418">0009-0002-3935-5418</a>。'
 
-WRITING_INTRO["zh"] = "我在不同場合寫作與演講。以下是近期的一些作品。"
+WRITING_INTRO["zh"] = "近年文章與演講選錄。"
 ENGLISH_NOTE["zh"] = "以下文稿僅有英文版本。"
 
 PIECES["zh"] = [
- ("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe",
-  "Morning Prayers，哈佛大學 Appleton Chapel，2025 年 2 月 10 日。"),
  ("/oration.html", "May you keep dancing",
   "證婚致詞，Nina Roussille 與 Ameet Kallarackal 的婚禮，法國普羅旺斯艾克斯，2026 年 6 月 20 日。"),
+ ("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe",
+  "Morning Prayers，哈佛大學 Appleton Chapel，2025 年 2 月 10 日。"),
 ]
 
 COURSES["zh"] = [
