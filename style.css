@@ -74,6 +74,25 @@ body {
 .nav a:hover { color: var(--ink); }
 .nav a[aria-current="page"] { color: var(--ink); }
 
+/* ---- Traditional Chinese --------------------------------------------------
+   Traditional faces first (Songti TC, not the Simplified SC cuts used
+   elsewhere), Garamond still ahead of them so Latin runs stay Garamond.
+   CJK needs more leading and reads well a little smaller. */
+
+html[lang="zh-Hant"] {
+  --serif: "EB Garamond", "Songti TC", "Source Han Serif TC", "Noto Serif TC",
+           "PingFang TC", "MingLiU", Georgia, serif;
+}
+
+html[lang="zh-Hant"] body {
+  font-size: 1.0625rem;
+  line-height: 1.9;
+}
+
+/* Chinese has no italic; keep emphasis upright on these pages */
+html[lang="zh-Hant"] .course-title,
+html[lang="zh-Hant"] .coda { font-style: normal; }
+
 /* ---- language toggle ------------------------------------------------------ */
 
 .langs {
@@ -89,6 +108,9 @@ body {
 .langs a:hover { color: var(--ink); }
 .langs a[aria-current="true"] { color: var(--ink); }
 .langs .sep { padding: 0 0.35em; color: #c4bdae; }
+
+/* 中文 sits optically with the tracked Latin caps at its own size */
+.langs a[lang="zh-Hant"] { letter-spacing: 0.02em; font-size: 0.8125rem; }
 
 /* ---- content ------------------------------------------------------------- */
 

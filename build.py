@@ -178,11 +178,66 @@ CONTACT_LEAD = {
 }
 
 
+
+# ------------------------------------------------- Traditional Chinese (zh-Hant)
+LANGS.append("zh")
+
+HREFLANG = {"en": "en", "fr": "fr", "es": "es", "pt": "pt", "zh": "zh-Hant"}
+LANG_LABEL = {"en": "EN", "fr": "FR", "es": "ES", "pt": "PT", "zh": "中文"}
+
+# On the Chinese pages his Chinese name leads; elsewhere the romanisation does.
+NAME = {l: "Wylie Chang" for l in LANGS}
+NAME["zh"] = "張振曦"
+
+NAV["zh"] = [("research", "研究"), ("writing", "文章"),
+             ("teaching", "教學"), ("cv", "履歷"), ("contact", "聯絡")]
+
+for _k, _v in {
+    "research": "研究", "writing": "文章", "teaching": "教學",
+    "cv": "履歷", "contact": "聯絡", "publications": "著作",
+    "journal": "期刊論文", "progress": "進行中", "conference": "研討會發表",
+}.items():
+    TITLES[_k]["zh"] = _v
+
+BIO["zh"] = "我叫張振曦（Wylie Chang）。我是麻省總醫院急診醫學部緊急醫療服務組的研究員。我研究急診醫學，特別關注精神科急症中的醫病共享決策。我的研究由幾組問題所引導：社會秩序、人際合作，以及個人在醫療機構之中如何行使能動性。我也關注機構的組織、治理與正當性，以及科學與醫學史。在轉向醫學之前，我曾領導數個公民組織，包括 Democracy House、Register2Vote.org 與 Lead for America。我在哈佛大學修習理科課程，並在塔夫茨大學主修哲學、政治學與經濟學。"
+
+PHOTO_ALT["zh"] = "黃昏時分，一群人坐在矮牆上仰望天空，背景是連綿的山丘。"
+
+RESEARCH["zh"] = [
+ "我的主要研究方向是急診醫學中的共享決策，特別是精神科急症，以及那些因決策能力不確定、醫病之間尚未建立信任關係而使一般審議條件受到干擾的情境。我關心病人與臨床人員在這些條件下如何建立可行的合作方式，以及信任、權威與責任如何在急性照護中被協商。我援引共享決策的臨床模型、Anselm Strauss 的「協商秩序」概念，以及公民組織與倡議工作的實踐，探討臨床關係如何支持病人的能動性。",
+ "我也持續研究緊急醫療服務，探討分權化的系統，以及授予派遣人員、臨床人員與機構的裁量權，如何造成照護方式與治療結果的差異。我工作的另一個面向，是醫療場域中的公民參與及政治參與。",
+]
+
+PROFILES["zh"] = '我的同儕審查論文可於 <a class="link" href="https://scholar.google.com/citations?user=UE97hJIAAAAJ&amp;hl=en">Google Scholar</a> 個人頁面查閱。我的 ORCID 為 <a class="link" href="https://orcid.org/0009-0002-3935-5418">0009-0002-3935-5418</a>。'
+
+WRITING_INTRO["zh"] = "我在不同場合寫作與演講。以下是近期的一些作品。"
+ENGLISH_NOTE["zh"] = "以下文稿僅有英文版本。"
+
+PIECES["zh"] = [
+ ("/gratitude.html", "&ldquo;The &lsquo;Way&rsquo; of Gratitude.&rdquo;",
+  "講稿，哈佛大學紀念教堂 Appleton Chapel，2025 年 2 月。"),
+ ("/oration.html", "為 Nina Roussille 與 Ameet Kallarackal 婚禮所作的證婚致詞。",
+  "法國普羅旺斯艾克斯，2026 年 6 月。"),
+]
+
+COURSES["zh"] = [
+ ("The American Soul", None,
+  "隨著愈來愈多美國人自認「有靈性但不屬於任何宗教」，本課程探問：在二十一世紀的美國，靈性意味著什麼，又對公民生活有何影響。透過課堂上的靜觀練習、個人省思，以及對文本、影像與故事的討論，學生檢視自己對於美國宗教、靈性與靜觀傳統的既有假設。"),
+ ("Literature of Confinement", "塔夫茨大學英文系 &middot; 與 Hilary Binda 博士合作",
+  "我有機會協助這門由 Hilary Binda 博士講授的課程。"),
+ ("Prison Justice &amp; Education", "塔夫茨監獄計畫 &middot; 與 Hilary Binda 博士合著",
+  "這份課程大綱是為塔夫茨監獄計畫（Tufts Prison Initiative）的首屆課程所撰寫。在該計畫中，塔夫茨大學的大學部學生與麻州蘭卡斯特 Souza-Baranowski 懲教中心（一所最高戒護等級的監獄）的受刑人一同修習可採計學分的研討課。本課程從三個主題探討監禁：獄中教育、囚禁中的邊緣身分，以及改革與廢除監獄的社會運動。"),
+]
+
+CV_TEXT["zh"] = "我的履歷可依需求提供。"
+CONTACT_LEAD["zh"] = "歡迎透過以下方式與我聯絡："
+
+
 # --------------------------------------------------------------------- render
 def head(lang, page, title):
     alts = "\n".join(
         '<link rel="alternate" hreflang="%s" href="https://wylie-chang.com%s%s">'
-        % (l, base(l), "" if page == "index" else page + ".html")
+        % (HREFLANG[l], base(l), "" if page == "index" else page + ".html")
         for l in LANGS)
     return """<!DOCTYPE html>
 <html lang="%s">
@@ -199,7 +254,7 @@ def head(lang, page, title):
 </head>
 <body>
 <div class="shell">
-""" % (lang, title, alts, "" if page == "index" else page + ".html")
+""" % (HREFLANG[lang], title, alts, "" if page == "index" else page + ".html")
 
 
 def sidebar(lang, page):
@@ -213,16 +268,16 @@ def sidebar(lang, page):
         cur = ' aria-current="true"' if l == lang else ''
         if i:
             langs.append('<span class="sep">&middot;</span>')
-        langs.append('<a href="%s"%s lang="%s">%s</a>' % (target, cur, l, l.upper()))
+        langs.append('<a href="%s"%s lang="%s">%s</a>' % (target, cur, HREFLANG[l], LANG_LABEL[l]))
     home = ' aria-current="page"' if page == "index" else ''
     return """  <header>
-    <a class="name" href="%s"%s>Wylie Chang</a>
+    <a class="name" href="%s"%s>%s</a>
     <nav class="nav">
 %s
     </nav>
     <p class="langs">%s</p>
   </header>
-""" % (base(lang), home, "\n".join(items), "".join(langs))
+""" % (base(lang), home, NAME[lang], "\n".join(items), "".join(langs))
 
 
 def entry_html(link, title, authors, source):
@@ -238,7 +293,7 @@ def entry_html(link, title, authors, source):
 
 def build_page(lang, page):
     L = lambda k: TITLES[k][lang]
-    stem = "Wylie Chang" if page == "index" else "%s &mdash; Wylie Chang" % L(page)
+    stem = NAME[lang] if page == "index" else "%s &mdash; %s" % (L(page), NAME[lang])
     out = [head(lang, page, stem), sidebar(lang, page)]
 
     if page == "index":
