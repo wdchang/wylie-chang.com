@@ -136,28 +136,20 @@ ENGLISH_NOTE = {
 
 # ------------------------------------------------------------------ teaching
 COURSES = {
-"en": [("The American Soul", None,
+"en": [("The American Soul", "Tufts University &middot; with Hayley Oliver-Smith",
         "As more Americans identify as spiritual but not religious, this course asks what spirituality means in twenty-first-century America, and what that implies for civic life. Through contemplative practice in class, personal reflection, and discussion of primary texts, images, and stories, students examine their own assumptions about religion, spirituality, and contemplative traditions in the United States."),
-       ("Literature of Confinement", "Tufts University, Department of English &middot; with Dr. Hilary Binda",
-        "I had the opportunity to assist with this course, taught by Dr. Hilary Binda."),
        ("Prison Justice &amp; Education", "Tufts Prison Initiative &middot; co-authored with Dr. Hilary Binda",
         "A syllabus written for the inaugural curriculum of the Tufts Prison Initiative, in which Tufts undergraduates took credit-bearing seminars alongside incarcerated men at Souza-Baranowski Correctional Center, a maximum-security prison in Lancaster, Massachusetts. The course explores confinement through three themes: education in prison, marginalized identities in captivity, and social movements to reform and abolish prisons.")],
-"fr": [("The American Soul", None,
+"fr": [("The American Soul", "Université Tufts &middot; avec Hayley Oliver-Smith",
         "Alors qu’un nombre croissant d’Américains se disent spirituels sans être religieux, ce cours interroge ce que signifie la spiritualité dans l’Amérique du XXI<sup>e</sup> siècle et ce qu’elle implique pour la vie civique. À travers la pratique contemplative en classe, la réflexion personnelle et la discussion de textes, d’images et de récits, les étudiants examinent leurs propres présupposés sur la religion, la spiritualité et les traditions contemplatives aux États-Unis."),
-       ("Literature of Confinement", "Université Tufts, département d’anglais &middot; avec la D<sup>re</sup> Hilary Binda",
-        "J’ai eu l’occasion de participer à ce cours, dispensé par la D<sup>re</sup> Hilary Binda."),
        ("Prison Justice &amp; Education", "Tufts Prison Initiative &middot; coécrit avec la D<sup>re</sup> Hilary Binda",
         "Un programme rédigé pour le curriculum inaugural de la Tufts Prison Initiative, dans le cadre de laquelle des étudiants de Tufts ont suivi des séminaires crédités aux côtés d’hommes incarcérés au Souza-Baranowski Correctional Center, une prison de haute sécurité à Lancaster, dans le Massachusetts. Le cours aborde l’enfermement selon trois axes : l’éducation en prison, les identités marginalisées en captivité, et les mouvements sociaux visant à réformer et à abolir les prisons.")],
-"es": [("The American Soul", None,
+"es": [("The American Soul", "Universidad Tufts &middot; con Hayley Oliver-Smith",
         "A medida que más estadounidenses se identifican como espirituales pero no religiosos, este curso pregunta qué significa la espiritualidad en la América del siglo XXI y qué implica para la vida cívica. Mediante la práctica contemplativa en clase, la reflexión personal y la discusión de textos, imágenes e historias, los estudiantes examinan sus propios supuestos sobre la religión, la espiritualidad y las tradiciones contemplativas en Estados Unidos."),
-       ("Literature of Confinement", "Universidad Tufts, Departamento de Inglés &middot; con la Dra. Hilary Binda",
-        "Tuve la oportunidad de colaborar en este curso, impartido por la Dra. Hilary Binda."),
        ("Prison Justice &amp; Education", "Tufts Prison Initiative &middot; coescrito con la Dra. Hilary Binda",
         "Un programa escrito para el currículo inaugural de la Tufts Prison Initiative, en el que estudiantes de Tufts cursaron seminarios con créditos junto a hombres encarcelados en el Souza-Baranowski Correctional Center, una prisión de máxima seguridad en Lancaster, Massachusetts. El curso explora el encierro a partir de tres ejes: la educación en prisión, las identidades marginadas en cautiverio y los movimientos sociales para reformar y abolir las prisiones.")],
-"pt": [("The American Soul", None,
+"pt": [("The American Soul", "Universidade Tufts &middot; com Hayley Oliver-Smith",
         "À medida que mais estadunidenses se identificam como espiritualizados, mas não religiosos, este curso pergunta o que significa espiritualidade nos Estados Unidos do século XXI e o que isso implica para a vida cívica. Por meio da prática contemplativa em sala, da reflexão pessoal e da discussão de textos, imagens e histórias, os estudantes examinam seus próprios pressupostos sobre religião, espiritualidade e tradições contemplativas nos Estados Unidos."),
-       ("Literature of Confinement", "Universidade Tufts, Departamento de Inglês &middot; com a Dra. Hilary Binda",
-        "Tive a oportunidade de colaborar neste curso, ministrado pela Dra. Hilary Binda."),
        ("Prison Justice &amp; Education", "Tufts Prison Initiative &middot; coescrito com a Dra. Hilary Binda",
         "Um programa escrito para o currículo inaugural da Tufts Prison Initiative, no qual estudantes de Tufts cursaram seminários com créditos ao lado de homens encarcerados no Souza-Baranowski Correctional Center, uma prisão de segurança máxima em Lancaster, Massachusetts. O curso explora o confinamento a partir de três eixos: a educação na prisão, as identidades marginalizadas em cativeiro e os movimentos sociais para reformar e abolir as prisões.")],
 }
@@ -221,10 +213,8 @@ PIECES["zh"] = [
 ]
 
 COURSES["zh"] = [
- ("The American Soul", None,
+ ("The American Soul", "塔夫茨大學 &middot; 與 Hayley Oliver-Smith 合作",
   "隨著愈來愈多美國人自認「有靈性但不屬於任何宗教」，本課程探問：在二十一世紀的美國，靈性意味著什麼，又對公民生活有何影響。透過課堂上的靜觀練習、個人省思，以及對文本、影像與故事的討論，學生檢視自己對於美國宗教、靈性與靜觀傳統的既有假設。"),
- ("Literature of Confinement", "塔夫茨大學英文系 &middot; 與 Hilary Binda 博士合作",
-  "我有機會協助這門由 Hilary Binda 博士講授的課程。"),
  ("Prison Justice &amp; Education", "塔夫茨監獄計畫 &middot; 與 Hilary Binda 博士合著",
   "這份課程大綱是為塔夫茨監獄計畫（Tufts Prison Initiative）的首屆課程所撰寫。在該計畫中，塔夫茨大學的大學部學生與麻州蘭卡斯特 Souza-Baranowski 懲教中心（一所最高戒護等級的監獄）的受刑人一同修習可採計學分的研討課。本課程從三個主題探討監禁：獄中教育、囚禁中的邊緣身分，以及改革與廢除監獄的社會運動。"),
 ]
