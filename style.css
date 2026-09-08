@@ -36,13 +36,15 @@ body {
 
 /* ---- shell --------------------------------------------------------------- */
 
+/* Column geometry measured from lewis-page.com at a 1280px viewport:
+   85px margins, 155px sidebar, 130px gutter, 825px content area. */
 .shell {
-  max-width: 57rem;
+  max-width: 80rem;
   margin: 0 auto;
-  padding: 5.5rem 2.5rem 12rem;
+  padding: 4.4rem 5.3125rem 12rem;
   display: grid;
-  grid-template-columns: 10.5rem 1fr;
-  gap: 4.5rem;
+  grid-template-columns: 13.96% 74.32%;
+  column-gap: 11.71%;
   align-items: start;
 }
 
@@ -51,7 +53,7 @@ body {
 .name {
   display: block;
   font-family: var(--serif);
-  font-size: 1.3125rem;
+  font-size: 1.4rem;
   line-height: 1.35;
   color: var(--ink);
   text-decoration: none;
@@ -66,7 +68,8 @@ body {
   letter-spacing: 0.01em;
   color: var(--quiet);
   text-decoration: none;
-  padding: 0.3rem 0;
+  line-height: 1.5;
+  padding: 0.35rem 0;
 }
 .nav a:hover { color: var(--ink); }
 .nav a[aria-current="page"] { color: var(--ink); }
@@ -170,16 +173,16 @@ a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent);
 
 /* ---- homepage photograph -------------------------------------------------- */
 
-/* the photograph takes a column of its own, beside the text, as on the references */
-.shell--home {
-  max-width: 64rem;
-  grid-template-columns: 10.5rem 11rem 1fr;
-  gap: 4rem;
+/* Within the 825px content area: photo 312, gap 24, text 489 — as measured. */
+.main--home {
+  display: grid;
+  grid-template-columns: 37.82% 59.27%;
+  column-gap: 2.91%;
+  align-items: start;
+  padding-top: 0.4rem;   /* the reference drops content slightly below the name */
 }
 
-.photo-col {
-  margin: 0.3rem 0 0;   /* optical alignment with the first line of text */
-}
+.photo-col { margin: 0; }
 
 .photo {
   display: block;
@@ -254,6 +257,7 @@ a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent);
     gap: 3.5rem;
     padding: 3.25rem 1.5rem 7rem;
   }
+  .main--home { grid-template-columns: 1fr; padding-top: 0; row-gap: 2.5rem; }
 
   .name { margin-bottom: 1.25rem; }
 
@@ -264,6 +268,5 @@ a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent);
   .label { margin-top: 0; }
   .bibliography { margin-top: 4.5rem; }
 
-  .shell--home { grid-template-columns: 1fr; }
-  .photo-col { max-width: 13rem; margin-top: 0; }
+  .photo-col { max-width: 16rem; }
 }
