@@ -156,6 +156,20 @@ a.title-link {
 }
 a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent); }
 
+/* ---- teaching ------------------------------------------------------------ */
+
+.course { margin: 0 0 2.75rem; }
+.course:last-child { margin-bottom: 0; }
+
+/* course titles set italic, as work titles are elsewhere on the site */
+.course-title {
+  display: block;
+  font-style: italic;
+  margin-bottom: 0.15rem;
+}
+
+.course p { margin: 0; }
+
 /* ---- writing entries ----------------------------------------------------- */
 
 .piece { margin: 0 0 2.5rem; }
