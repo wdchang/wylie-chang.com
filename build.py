@@ -51,7 +51,7 @@ BIO = {
  "I am an EMT and researcher. I currently contribute to research at the Department of Emergency Medicine at Massachusetts General Hospital, in the Emergency Medical Services group. I study how patients and clinicians make decisions together under conditions of uncertainty and urgency.",
  "I’m especially interested in psychiatric emergencies and the questions of agency, authority, and responsibility that arise.",
  "My other primary interests are institutional governance; the history of science and medicine; and the role of healthcare institutions in civic life and democracy.",
- "Previously, I led civic organisations, including Democracy House, Register2Vote.org, and Lead for America. I read Philosophy, Politics, and Economics at Tufts University and completed science coursework at Harvard University.",
+ "Previously, I led civic organizations, including Democracy House, Register2Vote.org, and Lead for America. I studied Philosophy, Politics, and Economics at Tufts University and completed science coursework at Harvard University.",
  "I live in Cambridge, Massachusetts.",
 ],
 "fr": [
@@ -81,8 +81,8 @@ PHOTO_ALT = {
 RESEARCH = {
 "en": [
  "My primary line of research concerns shared decision-making in emergency medicine, particularly in psychiatric emergencies and other encounters in which the conditions for ordinary deliberation are complicated by uncertain capacity and lack of rapport. I am interested in how patients and clinicians establish workable forms of cooperation under these conditions, and how trust, authority, and responsibility are negotiated in acute care.",
- "Drawing on clinical models of shared decision-making, Anselm Strauss’s concept of negotiated order, and practices from civic organising and advocacy, I examine how clinicians can protect patient agency during crises.",
- "I also maintain a line of research on emergency medical services, examining how decentralised systems and the discretion delegated to dispatchers, clinicians, and organisations shape variation in care and outcomes.",
+ "Drawing on clinical models of shared decision-making, Anselm Strauss’s concept of negotiated order, and practices from civic organizing and advocacy, I examine how clinicians can protect patient agency during crises.",
+ "I also maintain a line of research on emergency medical services, examining how decentralized systems and the discretion delegated to dispatchers, clinicians, and organizations shape variation in care and outcomes.",
  "A further area of my work examines civic engagement in healthcare settings.",
 ],
 "fr": [
@@ -169,7 +169,7 @@ COURSES = {
 "en": [("The American Soul", "Tufts University, 2018 &middot; with Hayley Oliver-Smith",
         "As more Americans identify as spiritual but not religious, this course asks what spirituality means in twenty-first-century America, and what that implies for civic life. Through contemplative practice in class, personal reflection, and discussion of primary texts, images, and stories, students examine their own assumptions about religion, spirituality, and contemplative traditions in the United States."),
        ("Prison Justice &amp; Education", "Tufts Prison Initiative, 2018 &middot; co-authored with Dr. Hilary Binda",
-        "A syllabus written for the inaugural curriculum of the Tufts Prison Initiative, in which Tufts undergraduates took credit-bearing seminars alongside incarcerated men at Souza-Baranowski Correctional Center, a maximum-security prison in Lancaster, Massachusetts. The course explores confinement through three themes: education in prison, marginalised identities in captivity, and social movements to reform and abolish prisons.")],
+        "A syllabus written for the inaugural curriculum of the Tufts Prison Initiative, in which Tufts undergraduates took credit-bearing seminars alongside incarcerated men at Souza-Baranowski Correctional Center, a maximum-security prison in Lancaster, Massachusetts. The course explores confinement through three themes: education in prison, marginalized identities in captivity, and social movements to reform and abolish prisons.")],
 "fr": [("The American Soul", "Université Tufts, 2018 &middot; avec Hayley Oliver-Smith",
         "Alors qu’un nombre croissant d’Américains se disent spirituels sans être religieux, ce cours interroge ce que signifie la spiritualité dans l’Amérique du XXI<sup>e</sup> siècle et ce qu’elle implique pour la vie civique. À travers la pratique contemplative en classe, la réflexion personnelle et la discussion de textes, d’images et de récits, les étudiants examinent leurs propres présupposés sur la religion, la spiritualité et les traditions contemplatives aux États-Unis."),
        ("Prison Justice &amp; Education", "Tufts Prison Initiative, 2018 &middot; coécrit avec la D<sup>re</sup> Hilary Binda",
@@ -205,7 +205,7 @@ TEACHING_NOTE = {
 TUTORING = {
 "en": ("Tutoring",
  "I also accept a limited number of clients for tutoring in the following areas:",
- [("Test preparation", ["MCAT and general standardised test strategy and planning"]),
+ [("Test preparation", ["MCAT and general standardized test strategy and planning"]),
   ("Natural sciences", ["Inorganic and organic chemistry",
                         "Physics (typical first-year university sequence)",
                         "Biology (molecular, cellular, organismic, evolutionary)",
