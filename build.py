@@ -62,9 +62,9 @@ BIO = {
  "Je vis à Cambridge, dans le Massachusetts.",
 ],
 "es": [
- "Soy técnico en emergencias médicas (EMT) e investigador. Trabajo en el Departamento de Medicina de Urgencias del Massachusetts General Hospital, en el grupo de servicios médicos de emergencia. Investigo cómo deciden juntos pacientes y profesionales sanitarios cuando median la urgencia y la incertidumbre.",
+ "Soy técnico en emergencias médicas (EMT) e investigador. Trabajo en el Departamento de Medicina de Urgencias del Massachusetts General Hospital, en el grupo de servicios médicos de emergencia. Investigo cómo deciden juntos pacientes y profesionales de la salud cuando median la urgencia y la incertidumbre.",
  "Me interesan especialmente las urgencias psiquiátricas y las cuestiones de capacidad de agencia, autoridad y responsabilidad que allí se plantean.",
- "Me interesan además la gobernanza de las instituciones, la historia de la ciencia y de la medicina, y el papel de los centros sanitarios en la vida cívica y democrática.",
+ "Me interesan además la gobernanza de las instituciones, la historia de la ciencia y de la medicina, y el papel de las instituciones de salud en la vida cívica y democrática.",
  "Antes dirigí varias organizaciones ciudadanas, entre ellas Democracy House, Register2Vote.org y Lead for America. Estudié Filosofía, Política y Economía en la Universidad Tufts, y cursé estudios de ciencias en Harvard.",
  "Vivo en Cambridge, Massachusetts.",
 ],
@@ -92,10 +92,10 @@ RESEARCH = {
  "Un dernier volet de mes travaux s’intéresse à l’engagement citoyen au sein des établissements de santé.",
 ],
 "es": [
- "Mi principal línea de investigación aborda la toma de decisiones compartida en medicina de urgencias, y sobre todo aquellas situaciones que desbaratan la deliberación ordinaria: la crisis psiquiátrica, la capacidad de decisión incierta, el vínculo de confianza que aún está por construir. Me interesa cómo pacientes y profesionales sanitarios logran cooperar pese a todo, y cómo se negocian entre ellos la confianza, la autoridad y la responsabilidad en plena urgencia.",
- "Para ello me apoyo en los modelos clínicos de decisión compartida, en el concepto de orden negociado de Anselm Strauss y en prácticas venidas de la organización comunitaria y la incidencia política, y examino cómo los profesionales sanitarios pueden preservar la capacidad de agencia del paciente en plena crisis.",
- "Mantengo asimismo una línea de investigación sobre los servicios médicos de emergencia: examino cómo la descentralización de los sistemas y el margen de decisión que se deja a teleoperadores, profesionales sanitarios e instituciones explican las diferencias observadas en la atención y en sus resultados.",
- "Un último ámbito de mi trabajo se ocupa de la participación ciudadana en los entornos sanitarios.",
+ "Mi principal línea de investigación aborda la toma de decisiones compartida en medicina de urgencias, y sobre todo aquellas situaciones que desbaratan la deliberación ordinaria: la crisis psiquiátrica, la capacidad de decisión incierta, el vínculo de confianza que aún está por construir. Me interesa cómo pacientes y profesionales de la salud logran cooperar pese a todo, y cómo se negocian entre ellos la confianza, la autoridad y la responsabilidad en plena urgencia.",
+ "Para ello me apoyo en los modelos clínicos de decisión compartida, en el concepto de orden negociado de Anselm Strauss y en prácticas venidas de la organización comunitaria y la incidencia política, y examino cómo los profesionales de la salud pueden preservar la capacidad de agencia del paciente en plena crisis.",
+ "Mantengo asimismo una línea de investigación sobre los servicios médicos de emergencia: examino cómo la descentralización de los sistemas y el margen de decisión que se deja a teleoperadores, profesionales de la salud e instituciones explican las diferencias observadas en la atención y en sus resultados.",
+ "Un último ámbito de mi trabajo se ocupa de la participación ciudadana en los entornos de salud.",
 ],
 }
 
@@ -197,7 +197,7 @@ TEACHING_NOTE = {
 # "programme(s) de cours" keeps the wording consistent with how the Prison
 # Justice syllabus is described in each language above.
 "fr": "Les programmes de cours sont disponibles sur demande.",
-"es": "Los programas de los cursos están disponibles a petición.",
+"es": "Los programas de los cursos están disponibles a solicitud.",
 "pt": "Os programas dos cursos estão disponíveis mediante solicitação.",
 "zh": "課程大綱可來函索取。",
 }
@@ -228,7 +228,7 @@ TUTORING = {
  "Acepto además un número limitado de alumnos en clases particulares, en las siguientes áreas:",
  [("Preparación de exámenes", ["MCAT y metodología de exámenes estandarizados"]),
   ("Ciencias naturales", ["Química inorgánica y orgánica",
-                          "Física (primer curso universitario)",
+                          "Física (primer año universitario)",
                           "Biología, de lo molecular a lo evolutivo",
                           "Bioquímica"]),
   ("Humanidades", ["Escritura creativa de no ficción", "Crónica y periodismo narrativo", "Redacción de discursos",
@@ -248,7 +248,7 @@ TUTORING = {
 CV_TEXT = {
 "en": "A copy of my curriculum vitae is available on request.",
 "fr": "Mon curriculum vitae est disponible sur demande.",
-"es": "Mi currículum está disponible a petición.",
+"es": "Mi currículum está disponible a solicitud.",
 "pt": "Uma cópia do meu currículo está disponível mediante solicitação.",
 }
 
