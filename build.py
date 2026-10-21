@@ -6,7 +6,7 @@ English lives at the root; the others at /fr/, /es/, /pt/.
 Run:  python3 build.py
 """
 
-import os, shutil
+import os, re, shutil
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 LANGS = ["en", "fr", "es"]   # Portuguese translations remain below, unused
@@ -327,6 +327,40 @@ CONTACT_LEAD["zh"] = "歡迎透過以下方式與我聯絡："
 
 
 # --------------------------------------------------------------------- render
+MARK_A, MARK_B = "<!--assets-->", "<!--/assets-->"
+
+# The homepage photograph, responsive. 640px covers a 323px slot at 2x and a
+# ~215px slot at 3x; 400px serves low-density phones.
+PICTURE = (
+    '      <figure class="photo-col">\n'
+    '        <picture>\n'
+    '          <source type="image/webp" sizes="(max-width: 44rem) 55vw, 323px"\n'
+    '                  srcset="/photo-400.webp 400w, /photo-640.webp 640w">\n'
+    '          <img class="photo" src="/photo-640.jpg" width="640" height="853"\n'
+    '               fetchpriority="high" alt="%s">\n'
+    '        </picture>\n'
+    '      </figure>'
+)
+
+
+def assets_block():
+    """Font rules and the stylesheet, inlined into the page.
+
+    A <link rel=stylesheet> blocks rendering, and GitHub Pages caches for only
+    ten minutes, so each view re-checks style.css and the Google Fonts stylesheet
+    with the server before it can paint. Inlining removes both round-trips; the
+    font files still come from gstatic, which caches them for a year. Comments
+    are stripped from the inlined copy only -- the files on disk stay readable.
+    """
+    def lean(css):
+        css = re.sub(r"/\*.*?\*/", "", css, flags=re.S)
+        return re.sub(r"\n{2,}", "\n", css).strip()
+    fonts = lean(open(os.path.join(ROOT, "fonts.css"), encoding="utf-8").read())
+    sheet = lean(open(os.path.join(ROOT, "style.css"), encoding="utf-8").read())
+    return '%s\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<style>%s\n%s</style>\n%s' % (
+        MARK_A, fonts, sheet, MARK_B)
+
+
 def head(lang, page, title):
     alts = "\n".join(
         '<link rel="alternate" hreflang="%s" href="https://wylie-chang.com%s%s">'
@@ -340,14 +374,11 @@ def head(lang, page, title):
 <title>%s</title>
 %s
 <link rel="alternate" hreflang="x-default" href="https://wylie-chang.com/%s">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css">
+%s
 </head>
 <body>
 <div class="shell">
-""" % (HREFLANG[lang], title, alts, "" if page == "index" else page + ".html")
+""" % (HREFLANG[lang], title, alts, "" if page == "index" else page + ".html", assets_block())
 
 
 def sidebar(lang, page):
@@ -393,7 +424,7 @@ def build_page(lang, page):
 
     if page == "index":
         out.append('  <main class="main--home">\n    <div class="column">')
-        out.append('      <figure class="photo-col">\n        <img class="photo" src="/photo.jpg" width="800" height="1067" alt="%s">\n      </figure>' % PHOTO_ALT[lang])
+        out.append(PICTURE % PHOTO_ALT[lang])
         for para in BIO[lang]:
             out.append("      <p>%s</p>" % para)
         out.append("    </div>\n  </main>")
@@ -467,6 +498,19 @@ def main():
             with open(path, "w", encoding="utf-8") as f:
                 f.write(build_page(lang, page))
             written.append(os.path.relpath(path, ROOT))
+    block = assets_block()
+    pat_mark = re.compile(re.escape(MARK_A) + r".*?" + re.escape(MARK_B), re.S)
+    pat_link = re.compile(r'<link rel="preconnect".*?<link rel="stylesheet" href="style\.css">', re.S)
+    for f in LONGFORM:
+        path = os.path.join(ROOT, f)
+        t = open(path, encoding="utf-8").read()
+        t2, n = pat_mark.subn(lambda m: block, t, count=1)
+        if not n:
+            t2, n = pat_link.subn(lambda m: block, t, count=1)
+        if n:
+            open(path, "w", encoding="utf-8").write(t2)
+            written.append(f)
+
     print("wrote %d pages" % len(written))
     for w in written:
         print("  " + w)
