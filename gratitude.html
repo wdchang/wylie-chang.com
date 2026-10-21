@@ -424,6 +424,7 @@ a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent);
   color: var(--quiet);
 }
 .address { line-height: 2; }
+.address + .profiles { margin-top: 2rem; }
 @media (max-width: 44rem) {
   .shell {
     grid-template-columns: 1fr;
@@ -442,16 +443,19 @@ a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent);
 </head>
 <body>
 <div class="shell">
+<!--nav-->
   <header>
-    <a class="name" href="/">Wylie Chang</a>
+    <a class="name" href="/">Wylie Daniel<br>Chen-hsi Chang<span class="name-zh">張振曦</span></a>
     <nav class="nav">
       <a href="/research.html">Research</a>
       <a href="/writing.html" aria-current="page">Writing</a>
       <a href="/teaching.html">Teaching</a>
-      <a href="/cv.html">CV</a>
+      <a href="/arts.html">Arts</a>
       <a href="/contact.html">Contact</a>
     </nav>
+    <p class="langs"><a href="/writing.html" aria-current="true" lang="en">EN</a><span class="sep">&middot;</span><a href="/fr/writing.html" lang="fr">FR</a><span class="sep">&middot;</span><a href="/es/writing.html" lang="es">ES</a><span class="sep">&middot;</span><a href="/zh/writing.html" lang="zh-Hant">中文</a></p>
   </header>
+<!--/nav-->
   <main>
     <h1 class="label">Writing</h1>
 

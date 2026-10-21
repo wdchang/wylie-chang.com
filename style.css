@@ -355,6 +355,9 @@ a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent);
 
 .address { line-height: 2; }
 
+/* the CV note sits a clear step below the addresses it follows */
+.address + .profiles { margin-top: 2rem; }
+
 /* ---- small screens ------------------------------------------------------- */
 
 @media (max-width: 44rem) {

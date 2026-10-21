@@ -10,7 +10,10 @@ import os, re, shutil
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 LANGS = ["en", "fr", "es"]   # Portuguese translations remain below, unused
-PAGES = ["index", "research", "writing", "teaching", "arts", "cv", "contact"]
+PAGES = ["index", "research", "writing", "teaching", "arts", "contact"]
+# "cv" is deliberately out of PAGES: the CV line now sits on the contact page.
+# TITLES["cv"] and CV_TEXT are kept in all four languages so restoring the
+# page is a one-word change once there is a PDF to link.
 
 # Long-form pieces are hand-written and English-only for now.
 LONGFORM = ["oration.html", "gratitude.html"]
@@ -23,11 +26,11 @@ def base(lang):
 # ---------------------------------------------------------------- navigation
 NAV = {
     "en": [("research", "Research"), ("writing", "Writing"),
-           ("teaching", "Teaching"), ("arts", "Arts"), ("cv", "CV"), ("contact", "Contact")],
+           ("teaching", "Teaching"), ("arts", "Arts"), ("contact", "Contact")],
     "fr": [("research", "Recherche"), ("writing", "Écrits"),
-           ("teaching", "Enseignement"), ("arts", "Arts"), ("cv", "CV"), ("contact", "Contact")],
+           ("teaching", "Enseignement"), ("arts", "Arts"), ("contact", "Contact")],
     "es": [("research", "Investigación"), ("writing", "Escritos"),
-           ("teaching", "Docencia"), ("arts", "Artes"), ("cv", "CV"), ("contact", "Contacto")],
+           ("teaching", "Docencia"), ("arts", "Artes"), ("contact", "Contacto")],
     "pt": [("research", "Pesquisa"), ("writing", "Escritos"),
            ("teaching", "Ensino"), ("cv", "CV"), ("contact", "Contato")],
 }
@@ -277,7 +280,7 @@ MASTHEAD = {l: _LATIN for l in LANGS}
 MASTHEAD["zh"] = '<span class="name-zh lead">張振曦</span>Wylie Daniel<br>Chen-hsi Chang'
 
 NAV["zh"] = [("research", "研究"), ("writing", "文章"),
-             ("teaching", "教學"), ("arts", "藝術"), ("cv", "履歷"), ("contact", "聯絡")]
+             ("teaching", "教學"), ("arts", "藝術"), ("contact", "聯絡")]
 
 for _k, _v in {
     "research": "研究", "writing": "文章", "teaching": "教學", "arts": "藝術",
@@ -328,6 +331,7 @@ CONTACT_LEAD["zh"] = "歡迎透過以下方式與我聯絡："
 
 # --------------------------------------------------------------------- render
 MARK_A, MARK_B = "<!--assets-->", "<!--/assets-->"
+MARK_N_A, MARK_N_B = "<!--nav-->", "<!--/nav-->"
 
 # The homepage photograph, responsive. 640px covers a 323px slot at 2x and a
 # ~215px slot at 3x; 400px serves low-density phones.
@@ -482,7 +486,10 @@ def build_page(lang, page):
         out.append('  <main>\n    <h1 class="label">%s</h1>\n    <div class="column">\n      <p>%s</p>\n    </div>\n  </main>' % (L("cv"), CV_TEXT[lang]))
 
     elif page == "contact":
-        out.append('  <main>\n    <h1 class="label">%s</h1>\n    <div class="column">\n      <p class="address">%s<br>\n        wdc [@] mail.ch<br>\n        wdchang [@] bwh.harvard.edu\n      </p>\n    </div>\n  </main>' % (L("contact"), CONTACT_LEAD[lang]))
+        out.append('  <main>\n    <h1 class="label">%s</h1>\n    <div class="column">' % L("contact"))
+        out.append('      <p class="address">%s<br>\n        wdc [@] mail.ch<br>\n        wdchang [@] bwh.harvard.edu\n      </p>' % CONTACT_LEAD[lang])
+        out.append('      <p class="profiles">%s</p>' % CV_TEXT[lang])
+        out.append("    </div>\n  </main>")
 
     out.append("</div>\n</body>\n</html>\n")
     return "\n".join(out)
@@ -498,17 +505,26 @@ def main():
             with open(path, "w", encoding="utf-8") as f:
                 f.write(build_page(lang, page))
             written.append(os.path.relpath(path, ROOT))
+    # The longform pieces are hand-written, so build.py owns their <head> assets
+    # AND their sidebar. Without the second, the nav silently drifts out of date
+    # every time a page is added or removed.
     block = assets_block()
+    navblock = MARK_N_A + "\n" + sidebar("en", "writing") + MARK_N_B + "\n"
     pat_mark = re.compile(re.escape(MARK_A) + r".*?" + re.escape(MARK_B), re.S)
     pat_link = re.compile(r'<link rel="preconnect".*?<link rel="stylesheet" href="style\.css">', re.S)
+    pat_nav_mark = re.compile(re.escape(MARK_N_A) + r".*?" + re.escape(MARK_N_B) + r"\n?", re.S)
+    pat_nav_html = re.compile(r"  <header>.*?</header>\n", re.S)
     for f in LONGFORM:
         path = os.path.join(ROOT, f)
-        t = open(path, encoding="utf-8").read()
-        t2, n = pat_mark.subn(lambda m: block, t, count=1)
+        t = original = open(path, encoding="utf-8").read()
+        t, n = pat_mark.subn(lambda m: block, t, count=1)
         if not n:
-            t2, n = pat_link.subn(lambda m: block, t, count=1)
-        if n:
-            open(path, "w", encoding="utf-8").write(t2)
+            t, n = pat_link.subn(lambda m: block, t, count=1)
+        t, n = pat_nav_mark.subn(lambda m: navblock, t, count=1)
+        if not n:
+            t, n = pat_nav_html.subn(lambda m: navblock, t, count=1)
+        if t != original:
+            open(path, "w", encoding="utf-8").write(t)
             written.append(f)
 
     print("wrote %d pages" % len(written))
