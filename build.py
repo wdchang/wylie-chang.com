@@ -59,14 +59,14 @@ BIO = {
  "Les urgences psychiatriques retiennent particulièrement mon attention, et avec elles les questions de pouvoir d’agir, d’autorité et de responsabilité qu’elles soulèvent.",
  "Je m’intéresse par ailleurs à la gouvernance des institutions, à l’histoire des sciences et de la médecine, ainsi qu’au rôle des établissements de santé dans la vie civique et démocratique.",
  "J’ai auparavant dirigé plusieurs organisations citoyennes, parmi lesquelles Democracy House, Register2Vote.org et Lead for America. J’ai étudié la philosophie, la politique et l’économie à l’université Tufts, et suivi une formation scientifique à Harvard.",
- "Je vis à Cambridge, dans le Massachusetts.",
+ "Je vis à Cambridge, dans le Massachusetts, aux États-Unis.",
 ],
 "es": [
  "Soy técnico en emergencias médicas (EMT) e investigador. Trabajo en el Departamento de Medicina de Urgencias del Massachusetts General Hospital, en el grupo de servicios médicos de emergencia. Investigo cómo deciden juntos pacientes y profesionales de la salud cuando median la urgencia y la incertidumbre.",
  "Me interesan especialmente las urgencias psiquiátricas y las cuestiones de capacidad de agencia, autoridad y responsabilidad que allí se plantean.",
  "Me interesan además la gobernanza de las instituciones, la historia de la ciencia y de la medicina, y el papel de las instituciones de salud en la vida cívica y democrática.",
  "Antes dirigí varias organizaciones ciudadanas, entre ellas Democracy House, Register2Vote.org y Lead for America. Estudié Filosofía, Política y Economía en la Universidad Tufts, y cursé estudios de ciencias en Harvard.",
- "Vivo en Cambridge, Massachusetts.",
+ "Vivo en Cambridge, Massachusetts (Estados Unidos).",
 ],
 }
 
@@ -291,7 +291,7 @@ BIO["zh"] = [
  "我特別關注精神科急症，以及隨之而來的能動性、權威與責任等問題。",
  "此外，我也關心制度的治理、科學史與醫學史，以及醫療機構在公民生活與民主中所扮演的角色。",
  "在此之前，我曾主持幾個公民團體，包括 Democracy House、Register2Vote.org 與 Lead for America。我在塔夫茨大學主修哲學、政治學與經濟學，並在哈佛大學修習理科課程。",
- "我住在麻州劍橋。",
+ "我住在美國麻州劍橋。",
 ]
 
 PHOTO_ALT["zh"] = "黃昏時分，一群人坐在矮牆上仰望天空，背景是連綿的山丘。"
