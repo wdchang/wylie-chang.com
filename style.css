@@ -310,6 +310,12 @@ a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent);
 
 .longform p { margin: 0 0 1.5rem; }
 
+/* The oration opens in French before switching to English; that passage is set
+   italic. The English aside inside it flips back to roman, as a contrasting
+   run does within italic text. */
+.longform p[lang="fr"] { font-style: italic; }
+.longform p[lang="fr"] [lang="en"] { font-style: normal; }
+
 /* quoted letters: indent and italic rather than a rule — no borders anywhere */
 .longform blockquote {
   margin: 2.5rem 0;
