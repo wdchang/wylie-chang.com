@@ -37,7 +37,7 @@ TITLES = {                       # page labels and <title> stems
     "writing":   {"en": "Writing", "fr": "Écrits", "es": "Escritos", "pt": "Escritos"},
     "teaching":  {"en": "Teaching", "fr": "Enseignement", "es": "Docencia", "pt": "Ensino"},
     "arts":      {"en": "Arts", "fr": "Arts", "es": "Artes", "pt": "Artes"},
-    "cv":        {"en": "Curriculum Vitae", "fr": "Curriculum vitae", "es": "Currículum vítae", "pt": "Currículo"},
+    "cv":        {"en": "Curriculum Vitae", "fr": "Curriculum vitae", "es": "Currículum vitae", "pt": "Currículo"},
     "contact":   {"en": "Contact", "fr": "Contact", "es": "Contacto", "pt": "Contato"},
     "publications": {"en": "Publications", "fr": "Publications", "es": "Publicaciones", "pt": "Publicações"},
     "journal":   {"en": "Journal Articles", "fr": "Articles de revue", "es": "Artículos de revista", "pt": "Artigos"},
@@ -62,10 +62,10 @@ BIO = {
  "Je vis à Cambridge, dans le Massachusetts.",
 ],
 "es": [
- "Soy técnico en emergencias médicas (EMT) e investigador. Actualmente colaboro en la investigación del Departamento de Medicina de Urgencias del Massachusetts General Hospital, en el grupo de servicios médicos de emergencia. Estudio cómo pacientes y clínicos toman decisiones conjuntamente en condiciones de incertidumbre y urgencia.",
- "Me interesan especialmente las urgencias psiquiátricas y las preguntas sobre agencia, autoridad y responsabilidad que allí surgen.",
- "Mis otros intereses principales son la gobernanza institucional; la historia de la ciencia y de la medicina; y el papel de las instituciones sanitarias en la vida cívica y la democracia.",
- "Anteriormente dirigí organizaciones cívicas, entre ellas Democracy House, Register2Vote.org y Lead for America. Estudié Filosofía, Política y Economía en la Universidad Tufts y cursé estudios de ciencias en la Universidad Harvard.",
+ "Soy técnico en emergencias médicas (EMT) e investigador. Trabajo en el Departamento de Medicina de Urgencias del Massachusetts General Hospital, en el grupo de servicios médicos de emergencia. Investigo cómo deciden juntos pacientes y profesionales sanitarios cuando median la urgencia y la incertidumbre.",
+ "Me interesan especialmente las urgencias psiquiátricas y las cuestiones de capacidad de agencia, autoridad y responsabilidad que allí se plantean.",
+ "Me interesan además la gobernanza de las instituciones, la historia de la ciencia y de la medicina, y el papel de los centros sanitarios en la vida cívica y democrática.",
+ "Antes dirigí varias organizaciones ciudadanas, entre ellas Democracy House, Register2Vote.org y Lead for America. Estudié Filosofía, Política y Economía en la Universidad Tufts, y cursé estudios de ciencias en Harvard.",
  "Vivo en Cambridge, Massachusetts.",
 ],
 }
@@ -73,7 +73,7 @@ BIO = {
 PHOTO_ALT = {
 "en": "A crowd seated on a low wall at dusk, looking up at the sky, with hills behind.",
 "fr": "Un public assis sur un muret au crépuscule, les yeux levés vers le ciel, des collines au loin.",
-"es": "Un grupo sentado sobre un muro bajo al atardecer, mirando al cielo, con colinas al fondo.",
+"es": "Un grupo sentado en un muro bajo al atardecer, con la mirada alzada hacia el cielo y unas colinas al fondo.",
 "pt": "Um grupo sentado sobre um muro baixo ao entardecer, olhando para o céu, com colinas ao fundo.",
 }
 
@@ -92,17 +92,17 @@ RESEARCH = {
  "Un dernier volet de mes travaux s’intéresse à l’engagement citoyen au sein des établissements de santé.",
 ],
 "es": [
- "Mi principal línea de investigación aborda la toma de decisiones compartida en medicina de urgencias, en particular en las urgencias psiquiátricas y en aquellos encuentros en los que las condiciones para la deliberación ordinaria se ven complicadas por una capacidad incierta y por la falta de vínculo. Me interesa cómo pacientes y clínicos establecen formas viables de cooperación en esas condiciones, y cómo se negocian la confianza, la autoridad y la responsabilidad en la atención aguda.",
- "A partir de los modelos clínicos de decisión compartida, del concepto de orden negociado de Anselm Strauss y de prácticas provenientes de la organización cívica y la incidencia, examino cómo los clínicos pueden proteger la agencia del paciente durante las crisis.",
- "También mantengo una línea de investigación sobre los servicios médicos de emergencia, en la que examino cómo los sistemas descentralizados y la discrecionalidad delegada a operadores, clínicos y organizaciones producen variaciones en la atención y en los resultados.",
- "Otra área de mi trabajo examina la participación cívica en los entornos sanitarios.",
+ "Mi principal línea de investigación aborda la toma de decisiones compartida en medicina de urgencias, y sobre todo aquellas situaciones que desbaratan la deliberación ordinaria: la crisis psiquiátrica, la capacidad de decisión incierta, el vínculo de confianza que aún está por construir. Me interesa cómo pacientes y profesionales sanitarios logran cooperar pese a todo, y cómo se negocian entre ellos la confianza, la autoridad y la responsabilidad en plena urgencia.",
+ "Para ello me apoyo en los modelos clínicos de decisión compartida, en el concepto de orden negociado de Anselm Strauss y en prácticas venidas de la organización comunitaria y la incidencia política, y examino cómo los profesionales sanitarios pueden preservar la capacidad de agencia del paciente en plena crisis.",
+ "Mantengo asimismo una línea de investigación sobre los servicios médicos de emergencia: examino cómo la descentralización de los sistemas y el margen de decisión que se deja a teleoperadores, profesionales sanitarios e instituciones explican las diferencias observadas en la atención y en sus resultados.",
+ "Un último ámbito de mi trabajo se ocupa de la participación ciudadana en los entornos sanitarios.",
 ],
 }
 
 PROFILES = {
 "en": 'You can find my peer-reviewed articles on my profile at <a class="link" href="https://scholar.google.com/citations?user=UE97hJIAAAAJ&amp;hl=en">Google Scholar</a>. My ORCID is <a class="link" href="https://orcid.org/0009-0002-3935-5418">0009-0002-3935-5418</a>.',
 "fr": 'Mes articles à comité de lecture sont recensés sur mon profil <a class="link" href="https://scholar.google.com/citations?user=UE97hJIAAAAJ&amp;hl=en">Google Scholar</a>. Mon identifiant ORCID est <a class="link" href="https://orcid.org/0009-0002-3935-5418">0009-0002-3935-5418</a>.',
-"es": 'Mis artículos revisados por pares están disponibles en mi perfil de <a class="link" href="https://scholar.google.com/citations?user=UE97hJIAAAAJ&amp;hl=en">Google Scholar</a>. Mi ORCID es <a class="link" href="https://orcid.org/0009-0002-3935-5418">0009-0002-3935-5418</a>.',
+"es": 'Mis artículos revisados por pares pueden consultarse en mi perfil de <a class="link" href="https://scholar.google.com/citations?user=UE97hJIAAAAJ&amp;hl=en">Google Scholar</a>. Mi ORCID es <a class="link" href="https://orcid.org/0009-0002-3935-5418">0009-0002-3935-5418</a>.',
 "pt": 'Meus artigos revisados por pares estão disponíveis no meu perfil do <a class="link" href="https://scholar.google.com/citations?user=UE97hJIAAAAJ&amp;hl=en">Google Scholar</a>. Meu ORCID é <a class="link" href="https://orcid.org/0009-0002-3935-5418">0009-0002-3935-5418</a>.',
 }
 
@@ -151,7 +151,7 @@ PIECES = {
        ("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, Harvard University, 10 February 2025.")],
 "fr": [("/oration.html", "May you keep dancing", "Allocution prononcée comme célébrant, mariage de Nina Roussille et Ameet Kallarackal, Aix-en-Provence, 20 juin 2026."),
        ("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, université Harvard, 10 février 2025.")],
-"es": [("/oration.html", "May you keep dancing", "Alocución como oficiante, boda de Nina Roussille y Ameet Kallarackal, Aix-en-Provence, Francia, 20 de junio de 2026."),
+"es": [("/oration.html", "May you keep dancing", "Discurso como oficiante, boda de Nina Roussille y Ameet Kallarackal, Aix-en-Provence (Francia), 20 de junio de 2026."),
        ("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, Universidad Harvard, 10 de febrero de 2025.")],
 "pt": [("/oration.html", "May you keep dancing", "Alocução como celebrante, casamento de Nina Roussille e Ameet Kallarackal, Aix-en-Provence, França, 20 de junho de 2026."),
        ("/gratitude.html", "The &lsquo;way&rsquo; of gratitude: A Daoist reflection on awe", "Morning Prayers, Appleton Chapel, Universidade Harvard, 10 de fevereiro de 2025.")],
@@ -160,7 +160,7 @@ PIECES = {
 ENGLISH_NOTE = {
 "en": None,
 "fr": "Ces textes ne sont disponibles qu’en anglais.",
-"es": "Estos textos están disponibles solo en inglés.",
+"es": "Estos textos solo están disponibles en inglés.",
 "pt": "Estes textos estão disponíveis apenas em inglês.",
 }
 
@@ -175,9 +175,9 @@ COURSES = {
        ("Prison Justice &amp; Education", "Tufts Prison Initiative, 2018 &middot; coécrit avec la D<sup>re</sup> Hilary Binda",
         "Programme conçu pour la première promotion de la Tufts Prison Initiative, qui réunissait des étudiants de Tufts et des hommes incarcérés au Souza-Baranowski Correctional Center &mdash; établissement de haute sécurité situé à Lancaster, dans le Massachusetts &mdash; autour de séminaires comptant dans leur cursus. Le cours aborde l’enfermement selon trois axes : l’éducation en détention, les identités marginalisées en captivité et les mouvements sociaux pour la réforme et l’abolition des prisons.")],
 "es": [("The American Soul", "Universidad Tufts, 2018 &middot; con Hayley Oliver-Smith",
-        "A medida que más estadounidenses se identifican como espirituales pero no religiosos, este curso pregunta qué significa la espiritualidad en la América del siglo XXI y qué implica para la vida cívica. Mediante la práctica contemplativa en clase, la reflexión personal y la discusión de textos, imágenes e historias, los estudiantes examinan sus propios supuestos sobre la religión, la espiritualidad y las tradiciones contemplativas en Estados Unidos."),
+        "Cada vez son más los estadounidenses que se declaran «espirituales pero no religiosos». Este curso se pregunta qué significa la espiritualidad en los Estados Unidos del siglo XXI y qué compromete para la vida en común. Mediante la práctica contemplativa en clase, la reflexión personal y la lectura de textos, imágenes y relatos, los estudiantes ponen a prueba sus propios presupuestos sobre la religión, la espiritualidad y las tradiciones contemplativas del país."),
        ("Prison Justice &amp; Education", "Tufts Prison Initiative, 2018 &middot; coescrito con la Dra. Hilary Binda",
-        "Un programa escrito para el currículo inaugural de la Tufts Prison Initiative, en el que estudiantes de Tufts cursaron seminarios con créditos junto a hombres encarcelados en el Souza-Baranowski Correctional Center, una prisión de máxima seguridad en Lancaster, Massachusetts. El curso explora el encierro a partir de tres ejes: la educación en prisión, las identidades marginadas en cautiverio y los movimientos sociales para reformar y abolir las prisiones.")],
+        "Programa diseñado para la primera promoción de la Tufts Prison Initiative, que reunía a estudiantes de Tufts y a hombres encarcelados en el Souza-Baranowski Correctional Center &mdash;centro de máxima seguridad en Lancaster, Massachusetts&mdash; en seminarios con reconocimiento de créditos. El curso aborda el encierro desde tres ejes: la educación en prisión, las identidades marginadas en reclusión y los movimientos sociales por la reforma y la abolición de las cárceles.")],
 "pt": [("The American Soul", "Universidade Tufts, 2018 &middot; com Hayley Oliver-Smith",
         "À medida que mais estadunidenses se identificam como espiritualizados, mas não religiosos, este curso pergunta o que significa espiritualidade nos Estados Unidos do século XXI e o que isso implica para a vida cívica. Por meio da prática contemplativa em sala, da reflexão pessoal e da discussão de textos, imagens e histórias, os estudantes examinam seus próprios pressupostos sobre religião, espiritualidade e tradições contemplativas nos Estados Unidos."),
        ("Prison Justice &amp; Education", "Tufts Prison Initiative, 2018 &middot; coescrito com a Dra. Hilary Binda",
@@ -188,8 +188,8 @@ COURSES = {
 ARTS_TEXT = {
 "en": 'I lead an arts community space in Cambridge. Learn more at <a class="link" href="https://farwellarts.com">Farwell Arts</a>.',
 "fr": 'Je dirige un lieu artistique associatif à Cambridge. Pour en savoir plus : <a class="link" href="https://farwellarts.com">Farwell Arts</a>.',
-"es": 'Dirijo un espacio comunitario dedicado a las artes en Cambridge. Más información en <a class="link" href="https://farwellarts.com">Farwell Arts</a>.',
-"zh": '我在麻州劍橋主持一個藝術社群空間。更多資訊請見 <a class="link" href="https://farwellarts.com">Farwell Arts</a>。',
+"es": 'Dirijo un espacio artístico y comunitario en Cambridge. Más información en <a class="link" href="https://farwellarts.com">Farwell Arts</a>.',
+"zh": '我在麻州劍橋主持一處社區藝文空間。更多資訊請見 <a class="link" href="https://farwellarts.com">Farwell Arts</a>。',
 }
 
 TEACHING_NOTE = {
@@ -197,9 +197,9 @@ TEACHING_NOTE = {
 # "programme(s) de cours" keeps the wording consistent with how the Prison
 # Justice syllabus is described in each language above.
 "fr": "Les programmes de cours sont disponibles sur demande.",
-"es": "Los programas de los cursos están disponibles a solicitud.",
+"es": "Los programas de los cursos están disponibles a petición.",
 "pt": "Os programas dos cursos estão disponíveis mediante solicitação.",
-"zh": "課程大綱可依需求提供。",
+"zh": "課程大綱可來函索取。",
 }
 
 TUTORING = {
@@ -225,21 +225,21 @@ TUTORING = {
                          "Dossiers de candidature (master, doctorat, bourses)"])]),
 
 "es": ("Tutorías",
- "También acepto un número limitado de alumnos para tutorías en las siguientes áreas:",
- [("Preparación de exámenes", ["MCAT y estrategia general para exámenes estandarizados"]),
+ "Acepto además un número limitado de alumnos en clases particulares, en las siguientes áreas:",
+ [("Preparación de exámenes", ["MCAT y metodología de exámenes estandarizados"]),
   ("Ciencias naturales", ["Química inorgánica y orgánica",
                           "Física (primer curso universitario)",
-                          "Biología (molecular, celular, organísmica, evolutiva)",
+                          "Biología, de lo molecular a lo evolutivo",
                           "Bioquímica"]),
-  ("Humanidades", ["No ficción creativa", "No ficción narrativa", "Redacción de discursos",
-                   "Solicitudes de posgrado y becas"])]),
+  ("Humanidades", ["Escritura creativa de no ficción", "Crónica y periodismo narrativo", "Redacción de discursos",
+                   "Solicitudes de posgrado y de becas"])]),
 
 "zh": ("個別指導",
- "我也接受少量學生進行個別指導，領域如下：",
- [("考試準備", ["MCAT 及標準化測驗的整體策略與規劃"]),
+ "我也接受少量學生，個別指導的範圍如下：",
+ [("考試準備", ["MCAT 與標準化測驗的應試策略與規劃"]),
   ("自然科學", ["無機化學與有機化學",
-              "物理（大學一年級課程）",
-              "生物學（分子、細胞、個體、演化）",
+              "普通物理（大一）",
+              "生物學：從分子到演化",
               "生物化學"]),
   ("人文", ["創意非虛構寫作", "敘事非虛構寫作", "演講稿寫作",
            "研究所與獎助學金申請"])]),
@@ -248,14 +248,14 @@ TUTORING = {
 CV_TEXT = {
 "en": "A copy of my curriculum vitae is available on request.",
 "fr": "Mon curriculum vitae est disponible sur demande.",
-"es": "Una copia de mi currículum vítae está disponible a solicitud.",
+"es": "Mi currículum está disponible a petición.",
 "pt": "Uma cópia do meu currículo está disponível mediante solicitação.",
 }
 
 CONTACT_LEAD = {
 "en": "I can be reached at",
 "fr": "Vous pouvez m’écrire à l’une ou l’autre de ces adresses :",
-"es": "Puede escribirme a",
+"es": "Puede escribirme a cualquiera de estas direcciones:",
 "pt": "Você pode entrar em contato comigo em",
 }
 
@@ -287,20 +287,20 @@ for _k, _v in {
     TITLES[_k]["zh"] = _v
 
 BIO["zh"] = [
- "我是一名緊急醫療技術員（EMT）與研究員，目前參與麻省總醫院急診醫學部緊急醫療服務組的研究工作。我研究病人與臨床人員如何在不確定與緊急的情況下共同做出決定。",
- "我特別關注精神科急症，以及其中浮現的能動性、權威與責任等問題。",
- "我的其他主要興趣包括機構治理、科學與醫學史，以及醫療機構在公民生活與民主中的角色。",
- "此前，我曾領導多個公民組織，包括 Democracy House、Register2Vote.org 與 Lead for America。我在塔夫茨大學主修哲學、政治學與經濟學，並在哈佛大學修習理科課程。",
+ "我是緊急醫療技術員（EMT），也是研究員，目前任職於麻省總醫院急診醫學部的緊急醫療服務組。我研究醫病雙方如何在不確定與急迫之中一起做決定。",
+ "我特別關注精神科急症，以及隨之而來的能動性、權威與責任等問題。",
+ "此外，我也關心制度的治理、科學史與醫學史，以及醫療機構在公民生活與民主中所扮演的角色。",
+ "在此之前，我曾主持幾個公民團體，包括 Democracy House、Register2Vote.org 與 Lead for America。我在塔夫茨大學主修哲學、政治學與經濟學，並在哈佛大學修習理科課程。",
  "我住在麻州劍橋。",
 ]
 
 PHOTO_ALT["zh"] = "黃昏時分，一群人坐在矮牆上仰望天空，背景是連綿的山丘。"
 
 RESEARCH["zh"] = [
- "我的主要研究方向是急診醫學中的共享決策，特別是精神科急症，以及那些因決策能力不確定、醫病之間尚未建立信任關係而使一般審議條件受到干擾的情境。我關心病人與臨床人員在這些條件下如何建立可行的合作方式，以及信任、權威與責任如何在急性照護中被協商。",
- "我援引共享決策的臨床模型、Anselm Strauss 的「協商秩序」概念，以及公民組織與倡議工作的實踐，探討臨床人員如何在危機中保護病人的能動性。",
- "我也持續研究緊急醫療服務，探討分權化的系統，以及授予派遣人員、臨床人員與機構的裁量權，如何造成照護方式與治療結果的差異。",
- "我工作的另一個面向，是醫療場域中的公民參與。",
+ "我的研究主要關注急診醫學中的醫病共享決策，尤其是那些讓尋常討論難以成立的時刻：精神科急症、決策能力不明、醫病之間尚未建立信任。我想了解醫病雙方在這些情況下如何仍能合作，信任、權威與責任又如何在急迫之中被協商出來。",
+ "我參照共享決策的臨床模型、Anselm Strauss 的「協商秩序」概念，以及社區組織與倡議工作的實踐，探討醫療人員如何在危機時刻守護病人的能動性。",
+ "我也持續研究緊急醫療服務：制度的分權化，以及留給救護派遣員、醫療人員與機構的裁量空間，如何造成照護方式與結果上的落差。",
+ "我的研究還有一個面向：醫療場域中的公民參與。",
 ]
 
 PROFILES["zh"] = '我的同儕審查論文可於 <a class="link" href="https://scholar.google.com/citations?user=UE97hJIAAAAJ&amp;hl=en">Google Scholar</a> 個人頁面查閱。我的 ORCID 為 <a class="link" href="https://orcid.org/0009-0002-3935-5418">0009-0002-3935-5418</a>。'
@@ -317,12 +317,12 @@ PIECES["zh"] = [
 
 COURSES["zh"] = [
  ("The American Soul", "塔夫茨大學，2018 &middot; 與 Hayley Oliver-Smith 合作",
-  "隨著愈來愈多美國人自認「有靈性但不屬於任何宗教」，本課程探問：在二十一世紀的美國，靈性意味著什麼，又對公民生活有何影響。透過課堂上的靜觀練習、個人省思，以及對文本、影像與故事的討論，學生檢視自己對於美國宗教、靈性與靜觀傳統的既有假設。"),
+  "隨著愈來愈多美國人自認「有靈性但不屬於任何宗教」，本課程探問：在二十一世紀的美國，靈性意味著什麼，又對公民生活有何影響。透過課堂上的靜心練習、個人省思，以及對文本、影像與故事的討論，學生檢視自己對於美國宗教、靈性與靜觀傳統的既有假設。"),
  ("Prison Justice &amp; Education", "塔夫茨監獄計畫，2018 &middot; 與 Hilary Binda 博士合著",
-  "這份課程大綱是為塔夫茨監獄計畫（Tufts Prison Initiative）的首屆課程所撰寫。在該計畫中，塔夫茨大學的大學部學生與麻州蘭卡斯特 Souza-Baranowski 懲教中心（一所最高戒護等級的監獄）的受刑人一同修習可採計學分的研討課。本課程從三個主題探討監禁：獄中教育、囚禁中的邊緣身分，以及改革與廢除監獄的社會運動。"),
+  "這份課程大綱是我為塔夫茨監獄計畫（Tufts Prison Initiative）首屆課程所寫。計畫中，塔夫茨的大學部學生與麻州蘭卡斯特 Souza-Baranowski 懲教中心（最高戒護等級的監獄）的受刑人同堂上課，修習可採計學分的研討課。本課程從三個主題探討監禁：獄中教育、囚禁中的邊緣身分，以及改革與廢除監獄的社會運動。"),
 ]
 
-CV_TEXT["zh"] = "我的履歷可依需求提供。"
+CV_TEXT["zh"] = "履歷可來函索取。"
 CONTACT_LEAD["zh"] = "歡迎透過以下方式與我聯絡："
 
 
